@@ -1,0 +1,90 @@
+.support {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 820px;
+    text-align: center;
+}
+
+.support__text-color {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    color: rgba(235, 128, 29, 1);
+}
+
+.support__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    padding-top: 30px;
+}
+
+.support__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    padding: 23px 0px 55px 0px;
+
+}
+
+.support__form {
+    margin: auto;
+    width: 525px;
+    height: 90px;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px 40px;
+}
+
+.support__form-input {
+    width: 270px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+}
+
+.support__form-input::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(144, 146, 176, 1);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.support__form-button {
+    width: 161px;
+    height: 45px;
+    border-radius: 20px;
+    background: rgba(104, 109, 241, 1);
+    color: white;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.support__form-button:hover {
+    background: rgba(180, 56, 122, 1);
+}
+
+.support__form-sign {
+    padding-right: 10px;
+}

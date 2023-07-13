@@ -1,0 +1,40 @@
+.features {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 114px;
+}
+
+.features__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    margin-top: 73px;
+}
+
+.features__text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.features__list{
+    padding-top: 17px;
+}
+
+.features__list-item {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.features__list-item::before {
+    content: url(../assets/img/chek.png);
+    margin-right: 20px;
+}

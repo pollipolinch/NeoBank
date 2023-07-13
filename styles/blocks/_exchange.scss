@@ -1,0 +1,74 @@
+.exchange {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(358.2deg, rgba(178, 178, 178, 0.8) 8.06%, rgba(178, 178, 178, 0) 67.93%),
+        linear-gradient(0deg, rgba(244, 244, 244, 0.9), rgba(244, 244, 244, 0.9));
+    border-radius: 28px;
+    margin-top: 50px;
+}
+
+.exchange__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.exchange__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.exchange__cur {
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.exchange__cur-value {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(128, 128, 128);
+}
+
+.exchange__cur-price {
+    margin-left: 17px;
+    color: black;
+}
+
+.exchange__link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: white;
+    display: block;
+    padding-top: 52px;
+    transition: 0.5s;
+}
+.exchange__link:hover{
+    color:  rgba(180, 56, 122, 1);
+}
+
+.exchange__update-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.exchange__update-img{
+    display: block;
+    float: right;
+    margin-top: 80px;
+}
