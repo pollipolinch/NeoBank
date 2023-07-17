@@ -1,0 +1,21 @@
+$breakpoint_xxl: 1350px;
+$breakpoint_xl: 1050px;
+$breakpoint_md: 850px;
+$breakpoint_s: 650px;
+$breakpoint_xs: 490px;
+
+$color-back: rgba(245, 244, 255, 1);
+$color-white: rgb(255, 255, 255);
+$color-light-white: rgba(255, 255, 255, 0.81);
+$color-black: rgb(0, 0, 0);
+$color-grey: rgba(128, 128, 128);
+$color-light-grey:rgba(144, 146, 176, 1);
+$color-pink: rgba(180, 56, 122, 1);
+$color-blue: rgba(0, 60, 255, 1);
+$color-dark-blue: rgba(29, 25, 41, 1);
+$color-violent:rgba(104, 109, 241, 1);
+$color-orange:rgba(235, 128, 29, 1);
+$color-grad-white-grey: linear-gradient(358.2deg, rgba(178, 178, 178, 0.8) 8.06%, rgba(178, 178, 178, 0) 67.93%),
+    linear-gradient(0deg, rgba(244, 244, 244, 0.9), rgba(244, 244, 244, 0.9));
+$color-grad-grey: linear-gradient(0deg, rgba(178, 178, 178, 0.2), rgba(178, 178, 178, 0.2)),
+    linear-gradient(0deg, #F4F4F4, #F4F4F4);

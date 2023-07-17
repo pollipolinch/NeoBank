@@ -1,51 +1,89 @@
-body {
-    background-color: rgba(245, 244, 255, 1);
-}
-
 .header {
     max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0px auto;
+    @include display-justify(flex, space-between, center);
     min-height: 85px;
-    align-items: center;
+
+    @media screen and (max-width: $breakpoint_xxl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width: $breakpoint_xl) {
+        max-width: 800px;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        max-width: 90%;
+        @include display-justify(flex, left, center);
+    }
+
+    @media screen and (max-width:$breakpoint_s) {
+        @include display-justify(flex, space-between, center);
+    }
+
 }
 
 .header__logo {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: rgba(180, 56, 122, 1);
+    @include fonts('Ubuntu', 700, 27px, 24px, 0.02em);
+    color: $color-pink;
 }
-.header__nav{
-    display: flex;
-    justify-content: space-between;
+
+.header__nav {
+    @include display-justify(flex, space-between, stretch);
     width: 437px;
+
+    @media screen and (max-width:$breakpoint_md) {
+        width: 400px;
+    }
+
+    @media screen and (max-width:$breakpoint_s) {
+        display: none;
+    }
 }
-.header__nav-link{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: rgba(29, 25, 41, 1);
+
+.header__nav-link {
+    @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
+    color: $color-dark-blue;
     transition: 0.5s;
+
+    &:hover {
+        color: $color-pink;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        font-size: 14px;
+    }
 }
-.header__nav-link:hover{
-    color: rgb(77, 64, 113);
-}
-.header__button{
-    width: 128px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-    background: rgba(0, 60, 255, 1);
+
+.header__button {
+    @include button(128px, 50px, 16px, $color-blue, $color-white);
+    @include display-justify(flex, center, center);
+    @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
     transition: 0.5s;
+
+    &:hover {
+        @include button(128px, 50px, 16px, $color-pink, $color-white);
+    }
+
+    @media screen and (max-width:$breakpoint_s) {
+        display: none;
+    }
 }
-.header__button:hover{
-    background: rgba(180, 56, 122, 1);
+
+.header__hamb {
+    display: none;
+
+    @media screen and (max-width:$breakpoint_s) {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.header__hamb-bar {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-dark-blue;
 }

@@ -1,4 +1,6 @@
 @import '../assets/fonts/fonts';
+@import './base/vars';
+@import'./base/mixins';
 @import './blocks/normalize';
 @import './blocks/header';
 @import './blocks/choose';
@@ -6,3 +8,4 @@
 @import './blocks/exchange';
 @import './blocks/world';
 @import './blocks/support';
+@import './blocks/footer';

@@ -2,40 +2,60 @@
     max-width: 1300px;
     margin: 0 auto;
     padding-top: 125px;
-    display: flex;
-    justify-content: space-between;
+    @include display-justify(flex, space-between, stretch);
+
+    @media screen and (max-width:$breakpoint_xxl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width:$breakpoint_xl) {
+        flex-direction: column;
+    }
 }
 
 .choose__title {
     max-width: 630px;
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 48px;
-    font-weight: 700;
-    font-size: 48px;
+    @include fonts('Ubuntu', 700, 48px, 48px, 0em);
     margin-bottom: 40px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        text-align: center;
+        margin: 0px auto 40px;
+        width: 90%;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        text-align: center;
+        margin: 0px auto 40px;
+        width: 90%;
+        @include fonts('Ubuntu', 700, 48px, 36px, 0em);
+    }
 }
 
 .choose-button {
-    width: 160px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-    background: rgba(0, 60, 255, 1);
+    @include button(160px, 50px, 16px, $color-blue, $color-white);
+    @include display-justify(flex, center, center);
+    @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
     transition: 0.5s;
+
+    &:hover {
+        @include button(128px, 50px, 16px, $color-pink, $color-white);
+    }
+
+    @media screen and (max-width:$breakpoint_xl) {
+        margin: auto;
+    }
 }
 
-.choose-button:hover {
-    background: rgba(180, 56, 122, 1);
-}
 
 .choose__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        align-self: center;
+        margin-top: 30px;
+        width: 70%;
+    }
 }

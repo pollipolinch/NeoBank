@@ -1,40 +1,65 @@
 .features {
     max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0px auto;
+    @include display-justify(flex, space-between, stretch);
     padding-top: 114px;
+
+    @media screen and (max-width:$breakpoint_xxl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width:$breakpoint_xl) {
+        flex-direction: column;
+    }
+}
+
+.features__img {
+    @media screen and (max-width:$breakpoint_xl) {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
 }
 
 .features__title {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
+    @include fonts('Rubik', 500, 50px, 35px, 0em);
     margin-top: 73px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 70%;
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+    }
 }
 
 .features__text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    @include fonts('Rubik', 400, 30px, 16px, 0em);
     margin-top: 20px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        display: block;
+        margin: 30px auto;
+        width: 70%;
+        text-align: center;
+    }
 }
 
-.features__list{
+.features__list {
     padding-top: 17px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 230px;
+        margin: auto;
+    }
 }
 
 .features__list-item {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
+    @include fonts('Rubik', 400, 30px, 14px, 0em);
     margin-top: 10px;
-}
 
-.features__list-item::before {
-    content: url(../assets/img/chek.png);
-    margin-right: 20px;
+    &::before {
+        content: url(../assets/img/chek.png);
+        margin-right: 20px;
+    }
 }

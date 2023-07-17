@@ -1,25 +1,31 @@
 .world {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
+
+    @media screen and (max-width:$breakpoint_xxl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        width: 90%;
+    }
 }
 
 .world__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 50px;
+    @include fonts('Ubuntu', 500, 50px, 30px, 0em);
     padding-top: 50px;
 }
 
 .world__text {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 50px;
+    @include fonts('Ubuntu', 500, 50px, 16px, 0em);
     padding-top: 8px;
 }
 
 .world__img {
     margin-top: 38px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 80%;
+    }
 }

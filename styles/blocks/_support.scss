@@ -1,90 +1,86 @@
 .support {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding-top: 820px;
     text-align: center;
 }
 
 .support__text-color {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 35px;
-    color: rgba(235, 128, 29, 1);
+    @include fonts('Ubuntu', 700, 35px, 24px, 0.02em);
+    color: $color-orange;
 }
 
 .support__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 0.02em;
+    @include fonts('Ubuntu', 700, 44px, 30px, 0.02em);
     padding-top: 30px;
 }
 
 .support__text {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: 0.02em;
+    @include fonts('Ubuntu', 500, 44px, 30px, 0.02em);
     padding: 23px 0px 55px 0px;
 
 }
 
 .support__form {
+    @include button(525px, 90px, 20px, $color-white, $color-light-grey);
     margin: auto;
-    width: 525px;
-    height: 90px;
-    border-radius: 20px;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-justify(flex, space-between, center);
     padding: 40px 20px 40px 40px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 400px;
+        padding: 20px 10px;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        width: 300px;
+    }
 }
 
 .support__form-input {
     width: 270px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-}
+    @include fonts('Nunito Sans', 400, 29px, 20px, 0.02em);
 
-.support__form-input::placeholder {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: rgba(144, 146, 176, 1);
-    text-align: left;
-    padding-left: 10px;
+    &::placeholder {
+        @include fonts('Nunito Sans', 400, 29px, 20px, 0.02em);
+        color: $color-light-grey;
+        text-align: left;
+        padding-left: 10px;
+
+        @media screen and (max-width:$breakpoint_md) {
+            @include fonts('Nunito Sans', 400, 29px, 16px, 0.02em);
+        }
+    }
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 150px;
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        width: 100px;
+    }
 }
 
 .support__form-button {
-    width: 161px;
-    height: 45px;
-    border-radius: 20px;
-    background: rgba(104, 109, 241, 1);
-    color: white;
+    @include button(161px, 45px, 20px, $color-violent, $color-white);
     padding: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
+    @include fonts('Ubuntu', 700, 20px, 16px, 0em);
+    @include display-justify(flex, flex-start, center);
     transition: 0.5s;
-}
 
-.support__form-button:hover {
-    background: rgba(180, 56, 122, 1);
+    &:hover {
+        @include button(161px, 45px, 20px, $color-pink, $color-white);
+    }
+
+    @media screen and (max-width:$breakpoint_md) {
+        width: 130px;
+    }
 }
 
 .support__form-sign {
     padding-right: 10px;
+
+    @media screen and (max-width:$breakpoint_md) {
+        padding-right: 5px;
+    }
 }

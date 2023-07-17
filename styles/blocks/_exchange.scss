@@ -1,27 +1,28 @@
 .exchange {
     max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0px auto;
+    @include display-justify(flex, space-between, stretch);
     padding: 30px;
-    background: linear-gradient(358.2deg, rgba(178, 178, 178, 0.8) 8.06%, rgba(178, 178, 178, 0) 67.93%),
-        linear-gradient(0deg, rgba(244, 244, 244, 0.9), rgba(244, 244, 244, 0.9));
+    background: $color-grad-white-grey;
     border-radius: 28px;
     margin-top: 50px;
+
+    @media screen and (max-width:$breakpoint_xxl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width:$breakpoint_xl) {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
 }
 
 .exchange__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 50px;
+    @include fonts('Ubuntu', 500, 50px, 30px, 0em);
 }
 
 .exchange__text {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 50px;
+    @include fonts('Ubuntu', 500, 50px, 20px, 0em);
     margin-top: 20px;
 }
 
@@ -33,42 +34,42 @@
 }
 
 .exchange__cur-value {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 22px;
-    color: rgba(128, 128, 128);
+    @include fonts('Ubuntu', 700, 22px, 20px, 0.02em);
+    color: $color-grey;
 }
 
 .exchange__cur-price {
     margin-left: 17px;
-    color: black;
+    color: $color-black;
 }
 
 .exchange__link {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 22px;
-    color: white;
+    @include fonts('Ubuntu', 700, 22px, 20px, 0.02em);
+    color: $color-white;
     display: block;
     padding-top: 52px;
     transition: 0.5s;
-}
-.exchange__link:hover{
-    color:  rgba(180, 56, 122, 1);
+
+    &:hover {
+        color: $color-pink;
+    }
 }
 
 .exchange__update-text {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 50px;
-    letter-spacing: 0em;
+    @include fonts('Ubuntu', 500, 50px, 16px, 0em);
     text-align: left;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        text-align: right;
+    }
 }
-.exchange__update-img{
+
+.exchange__update-img {
     display: block;
     float: right;
     margin-top: 80px;
+
+    @media screen and (max-width:$breakpoint_xl) {
+        display: none;
+    }
 }
