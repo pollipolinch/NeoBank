@@ -1,4 +1,5 @@
 @import '../../style/settings.css';
+@import '../../assets/fonts/fonts.css';
 
 .header {
   max-width: 1300px;
