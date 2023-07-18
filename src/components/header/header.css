@@ -1,0 +1,126 @@
+@import '../../style/settings.css';
+
+.header {
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 85px;
+}
+@media screen and (max-width: 1350px) {
+  .header {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header {
+    max-width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 27px;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: rgb(180, 56, 122);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 437px;
+}
+@media screen and (max-width: 850px) {
+  .header__nav {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__nav {
+    display: none;
+  }
+}
+ .header__nav-link {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: rgb(29, 25, 41);
+  transition: 0.5s;
+  cursor: pointer;
+}
+ .header__nav_link:hover {
+  color: rgb(180, 56, 122);
+}
+@media screen and (max-width: 850px) {
+  .header__nav .header__nav_link {
+    font-size: 14px;
+  }
+}
+
+.header__button {
+  width: 128px;
+  height: 50px;
+  border-radius: 16px;
+  background: rgb(0, 60, 255);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  transition: 0.5s;
+}
+.header__button:hover {
+  width: 128px;
+  height: 50px;
+  border-radius: 16px;
+  background: rgb(180, 56, 122);
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 650px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__hamb {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .header__hamb {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header__hamb-bar {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(29, 25, 41);
+}/*# sourceMappingURL=header.css.map */
