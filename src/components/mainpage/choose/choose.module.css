@@ -16,7 +16,7 @@
   margin-bottom: 40px;
 }
 
-.choose-button {
+.choose_button {
   width: 160px;
   height: 50px;
   border-radius: 16px;
@@ -33,7 +33,7 @@
   transition: 0.5s;
 }
 
-.choose-button:hover {
+.choose_button:hover {
   background: rgb(180, 56, 122);
 }
 
@@ -64,7 +64,7 @@
     width: 90%;
   }
 
-  .choose-button {
+  .choose_button {
     margin: auto;
   }
 

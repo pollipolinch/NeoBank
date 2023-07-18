@@ -1,40 +1,40 @@
 import React from "react";
-import './exchange.css';
+import style from './exchange.module.css';
 import bank from '../../../assets/img/bank.png'
 
 
 
 export default function ExchangeSection() {
     return (
-        <section className="exchange">
-            <div className="exchange__currency">
-                <h2 className="exchange__title">Exchange rate in internet bank</h2>
-                <h3 className="exchange__text">Currency</h3>
-                <div className="exchange__cur">
-                    <p className="exchange__cur-value">USD:
-                        <span className="exchange__cur-price">60.78</span>
+        <section className={style.exchange}>
+            <div className={style.exchange__currency}>
+                <h2 className={style.exchange__title}>Exchange rate in internet bank</h2>
+                <h3 className={style.exchange__text}>Currency</h3>
+                <div className={style.exchange__cur}>
+                    <p className={style.exchange__cur_value}>USD:
+                        <span className={style.exchange__cur_price}>60.78</span>
                     </p>
-                    <p className="exchange__cur-value">CNY:
-                        <span className="exchange__cur-price">9.08</span>
+                    <p className={style.exchange__cur_value}>CNY:
+                        <span className={style.exchange__cur_price}>9.08</span>
                     </p>
-                    <p className="exchange__cur-value">CHF:
-                        <span className="exchange__cur-price">64.78</span>
+                    <p className={style.exchange__cur_value}>CHF:
+                        <span className={style.exchange__cur_price}>64.78</span>
                     </p>
-                    <p className="exchange__cur-value">USD:
-                        <span className="exchange__cur-price">60.78</span>
+                    <p className={style.exchange__cur_value}>USD:
+                        <span className={style.exchange__cur_price}>60.78</span>
                     </p>
-                    <p className="exchange__cur-value">JPY:
-                        <span className="exchange__cur-price">0.46</span>
+                    <p className={style.exchange__cur_value}>JPY:
+                        <span className={style.exchange__cur_price}>0.46</span>
                     </p>
-                    <p className="exchange__cur-value">TRY:
-                        <span className="exchange__cur-price">3.39</span>
+                    <p className={style.exchange__cur_value}>TRY:
+                        <span className={style.exchange__cur_price}>3.39</span>
                     </p>
                 </div>
-                <button className="exchange__link">All courses</button>
+                <button className={style.exchange__link}>All courses</button>
             </div>
-            <div className="exchange__update">
-                <h3 className="exchange__update-text">Update every 15 minutes, MSC 09.08.2022</h3>
-                <img className="exchange__update-img" src={bank} alt="bank-img" />
+            <div className={style.exchange__update}>
+                <h3 className={style.exchange__update_text}>Update every 15 minutes, MSC 09.08.2022</h3>
+                <img className={style.exchange__update_img} src={bank} alt="bank-img" />
             </div>
         </section>
 

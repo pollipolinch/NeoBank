@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.support__text-color {
+.support__text_color {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     line-height: 35px;
@@ -45,7 +45,7 @@
     padding: 40px 20px 40px 40px;
 }
 
-.support__form-input {
+.support__form_input {
     width: 270px;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
@@ -54,7 +54,7 @@
     letter-spacing: 0.02em;
 }
 
- .support__form-input::placeholder {
+ .support__form_input::placeholder {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     line-height: 29px;
@@ -65,7 +65,7 @@
     padding-left: 10px;
 }
 
-.support__form-button {
+.support__form_button {
     width: 161px;
     height: 45px;
     border-radius: 20px;
@@ -82,7 +82,7 @@
     transition: 0.5s;
 }
 
-.support__form-button:hover {
+.support__form_button:hover {
     width: 161px;
     height: 45px;
     border-radius: 20px;
@@ -90,7 +90,7 @@
     color: rgb(255, 255, 255);
 }
 
-.support__form-sign {
+.support__form_sign {
     padding-right: 10px;
 }
 
@@ -99,7 +99,7 @@
         width: 400px;
         padding: 20px 10px;
     }
-    .support__form-input {
+    .support__form_input {
         width: 150px;
     }
 }
@@ -108,21 +108,21 @@
     .support__form {
         width: 300px;
     }
-    .support__form-input::placeholder {
+    .support__form_input::placeholder {
         font-size: 16px;
     }
-    .support__form-input {
+    .support__form_input {
         width: 100px;
     }
-    .support__form-button {
+    .support__form_button {
         width: 130px;
     }
-    .support__form-sign {
+    .support__form_sign {
         padding-right: 5px;
     }
 }
 @media screen and (max-width: 490px) {
-    .support__form-input::placeholder {
+    .support__form_input::placeholder {
         font-size: 14px;
     }
 }

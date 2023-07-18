@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.footer__address-phone {
+.footer__address_phone {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     line-height: 44px;
@@ -23,7 +23,7 @@
     color: rgb(0, 0, 0);
 }
 
-.footer__address-email {
+.footer__address_email {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     line-height: 24px;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 490px) {
-    .footer__address-phone {
+    .footer__address_phone {
         font-size: 24px;
     }
 }

@@ -1,27 +1,25 @@
 import React from "react";
-import './header.css';
+import style from './header.module.css';
 
 export default function Header() {
     return (
-        <>
-        <header className="header">
-        <h2 className="header__logo">NeoBank</h2>
+        <header className={style.header}>
+        <h2 className={style.header__logo}>NeoBank</h2>
         <nav>
-            <ul className="header__nav">
-                <li className="header__nav-link">Credit card</li>
-                <li className="header__nav-link">Product</li>
-                <li className="header__nav-link">Account</li>
-                <li className="header__nav-link">Resources</li>
+            <ul className={style.header__nav}>
+                <li className={style.header__nav_link}>Credit card</li>
+                <li className={style.header__nav_link}>Product</li>
+                <li className={style.header__nav_link}>Account</li>
+                <li className={style.header__nav_link}>Resources</li>
             </ul>
         </nav>
-        <button className="header__button">Online Bank</button>
-        <div className="header__hamb">
-            <span className="header__hamb-bar"></span>
-            <span className="header__hamb-bar"></span>
-            <span className="header__hamb-bar"></span>
-            <span className="header__hamb-bar"></span>
+        <button className={style.header__button}>Online Bank</button>
+        <div className={style.header__hamb}>
+            <span className={style.header__hamb_bar}></span>
+            <span className={style.header__hamb_bar}></span>
+            <span className={style.header__hamb_bar}></span>
+            <span className={style.header__hamb_bar}></span>
         </div>
     </header>
-    </>
     )
 }

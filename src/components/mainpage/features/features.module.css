@@ -1,0 +1,78 @@
+.features {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 114px;
+}
+
+.features__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 35px;
+    margin-top: 73px;
+}
+
+.features__text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.features__list {
+    padding-top: 17px;
+}
+
+.features__list_item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 0em;
+    margin-top: 10px;
+}
+
+.features__list_item::before {
+    content: url(../../../assets/img/chek.png);
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+    .features {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .features__img {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+
+    .features__title {
+        width: 70%;
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .features__text {
+        display: block;
+        margin: 30px auto;
+        width: 70%;
+        text-align: center;
+    }
+
+    .features__list {
+        width: 230px;
+        margin: auto;
+    }
+}

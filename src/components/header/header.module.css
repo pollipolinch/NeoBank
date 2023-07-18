@@ -26,7 +26,7 @@
   width: 437px;
 }
 
-.header__nav-link {
+.header__nav_link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   line-height: 18px;
@@ -66,7 +66,7 @@
   display: none;
 }
 
-.header__hamb-bar {
+.header__hamb_bar {
   display: block;
   width: 40px;
   height: 2px;

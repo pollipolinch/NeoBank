@@ -1,0 +1,21 @@
+@mixin display-justify($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin fonts($family, $weight, $height, $size, $spacing) {
+    font-family: $family, sans-serif;
+    font-weight: $weight;
+    line-height: $height;
+    font-size: $size;
+    letter-spacing: $spacing;
+}
+
+@mixin button($width, $height, $radius, $back, $color) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background: $back;
+    color: $color;
+}
