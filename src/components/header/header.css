@@ -22,16 +22,6 @@
 @media screen and (max-width: 850px) {
   .header {
     max-width: 90%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 650px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -42,6 +32,7 @@
   font-size: 24px;
   letter-spacing: 0.02em;
   color: rgb(180, 56, 122);
+  cursor: pointer;
 }
 
 .header__nav {

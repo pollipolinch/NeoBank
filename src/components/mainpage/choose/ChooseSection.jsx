@@ -13,10 +13,10 @@ export default function ChooseSection() {
                 <button className="choose-button">Choose the card</button>
             </div>
             <div className="choose__cards">
-                <img src={card1} alt="card-img"/>
-                <img src={card2}  alt="card-img"/>
-                <img src={card3}  alt="card-img"/>
-                <img src={card4}  alt="card-img"/>
+                <img className="choose__card" src={card1} alt="card-img"/>
+                <img className="choose__card" src={card2}  alt="card-img"/>
+                <img className="choose__card" src={card3}  alt="card-img"/>
+                <img className="choose__card" src={card4}  alt="card-img"/>
             </div>
         </section>
 
