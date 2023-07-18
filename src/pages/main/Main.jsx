@@ -1,5 +1,6 @@
 import Header from "../../components/header/Header";
-import ChooseSection from "../../components/mainpage/ChooseSection";
+import ChooseSection from "../../components/mainpage/choose/ChooseSection";
+import FeaturesSection from "../../components/mainpage/features/FeaturesSection";
 
 const Main = () => {
   return (
@@ -7,6 +8,7 @@ const Main = () => {
       <div>
         <Header />
         <ChooseSection />
+        <FeaturesSection/>
       </div>
     </>
   );
