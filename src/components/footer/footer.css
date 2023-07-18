@@ -9,28 +9,10 @@
     padding: 95px 0px 90px 0px;
 }
 
-@media screen and (max-width: 1350px) {
-    .footer__container {
-        max-width: 1000px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .footer__container {
-        width: 90%;
-    }
-}
-
 .footer__contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media screen and (max-width: 650px) {
-    .footer__logo {
-        width: 100px;
-    }
 }
 
 .footer__address-phone {
@@ -38,18 +20,7 @@
     font-weight: 700;
     line-height: 44px;
     font-size: 30px;
-    letter-spacing: 0em;
     color: rgb(0, 0, 0);
-}
-
-@media screen and (max-width: 490px) {
-    .footer__address-phone {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 700;
-        line-height: 44px;
-        font-size: 24px;
-        letter-spacing: 0em;
-    }
 }
 
 .footer__address-email {
@@ -65,18 +36,8 @@
 
 .footer__list {
     display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
     flex-wrap: wrap;
     padding: 30px 0px 20px 0px;
-}
-
-@media screen and (max-width: 1050px) {
-    .footer__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-    }
 }
 
 .footer__link {
@@ -110,12 +71,35 @@
     padding-top: 30px;
 }
 
+@media screen and (max-width: 1350px) {
+    .footer__container {
+        max-width: 1000px;
+    }
+}
+
 @media screen and (max-width: 1050px) {
+    .footer__container {
+        width: 90%;
+    }
+
+    .footer__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footer__text {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 500;
-        line-height: 24px;
         font-size: 12px;
-        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .footer__address-phone {
+        font-size: 24px;
     }
 }
