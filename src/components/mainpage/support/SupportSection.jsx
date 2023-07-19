@@ -8,7 +8,7 @@ import mail_sign from '../../../assets/img/email.png'
 
 export default function SupportSection() {
     return (
-        <section class={style.support}>
+        <section className={style.support}>
             <p className={style.support__text_color}>Support</p>
             <h2 className={style.support__title}>Subscribe Newsletter & get</h2>
             <p className={style.support__text}>Bank News</p>
