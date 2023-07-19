@@ -14,11 +14,6 @@
 
     @media screen and (max-width:$breakpoint_md) {
         max-width: 90%;
-        @include display-justify(flex, left, center);
-    }
-
-    @media screen and (max-width:$breakpoint_s) {
-        @include display-justify(flex, space-between, center);
     }
 
 }
@@ -28,7 +23,7 @@
     color: $color-pink;
 }
 
-.header__nav {
+.header__nav-list {
     @include display-justify(flex, space-between, stretch);
     width: 437px;
 
@@ -37,29 +32,58 @@
     }
 
     @media screen and (max-width:$breakpoint_s) {
-        display: none;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50vw;
+        height: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 120px 0;
+        background-color: $color-back;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    li {
+        @media screen and (max-width:$breakpoint_s) {
+            padding-top: 30px;
+        }
+    }
+
+    .header__nav-link {
+        @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
+        color: $color-dark-blue;
+        transition: 0.5s;
+
+        &:hover {
+            color: $color-pink;
+        }
+
+        @media screen and (max-width:$breakpoint_md) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width:$breakpoint_s) {
+            font-size: 16px;
+            width: 100vw;
+            text-align: center;
+            border-bottom: 2px solid #EDF2EC;
+        }
+
     }
 }
 
-.header__nav-link {
-    @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
-    color: $color-dark-blue;
-    transition: 0.5s;
-
-    &:hover {
-        color: $color-pink;
-    }
-
-    @media screen and (max-width:$breakpoint_md) {
-        font-size: 14px;
-    }
-}
 
 .header__button {
     @include button(128px, 50px, 16px, $color-blue, $color-white);
     @include display-justify(flex, center, center);
     @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
     transition: 0.5s;
+    text-align: center;
 
     &:hover {
         @include button(128px, 50px, 16px, $color-pink, $color-white);
@@ -74,16 +98,44 @@
     display: none;
 
     @media screen and (max-width:$breakpoint_s) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
         display: block;
         cursor: pointer;
+        z-index: 3;
+    }
+
+    span {
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin: 6px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: $color-dark-blue;
     }
 }
 
-.header__hamb-bar {
-    display: block;
-    width: 40px;
-    height: 2px;
-    margin: 6px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: $color-dark-blue;
+#header__toggle {
+    display: none;
+
+    &:checked~.header__hamb>.header__hamb-bar:nth-child(1) {
+        opacity: 0;
+    }
+
+    &:checked~.header__hamb>.header__hamb-bar:nth-child(2) {
+        transform: translateY(4px) rotate(45deg);
+    }
+
+    &:checked~.header__hamb>.header__hamb-bar:nth-child(3) {
+        transform: translateY(-4px) rotate(-45deg);
+    }
+
+    &:checked~.header__hamb>.header__hamb-bar:nth-child(4) {
+        opacity: 0;
+    }
+
+    &:checked~.header__nav>.header__nav-list {
+        right: 0%;
+    }
 }

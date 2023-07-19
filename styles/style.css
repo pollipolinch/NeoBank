@@ -134,16 +134,6 @@ body {
 @media screen and (max-width: 850px) {
   .header {
     max-width: 90%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 650px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -156,24 +146,41 @@ body {
   color: rgb(180, 56, 122);
 }
 
-.header__nav {
+.header__nav-list {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 437px;
 }
 @media screen and (max-width: 850px) {
-  .header__nav {
+  .header__nav-list {
     width: 400px;
   }
 }
 @media screen and (max-width: 650px) {
-  .header__nav {
-    display: none;
+  .header__nav-list {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50vw;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 120px 0;
+    background-color: rgb(245, 244, 255);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+    z-index: 2;
+    overflow: hidden;
   }
 }
-
-.header__nav-link {
+@media screen and (max-width: 650px) {
+  .header__nav-list li {
+    padding-top: 30px;
+  }
+}
+.header__nav-list .header__nav-link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   line-height: 18px;
@@ -182,12 +189,20 @@ body {
   color: rgb(29, 25, 41);
   transition: 0.5s;
 }
-.header__nav-link:hover {
+.header__nav-list .header__nav-link:hover {
   color: rgb(180, 56, 122);
 }
 @media screen and (max-width: 850px) {
-  .header__nav-link {
+  .header__nav-list .header__nav-link {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__nav-list .header__nav-link {
+    font-size: 16px;
+    width: 100vw;
+    text-align: center;
+    border-bottom: 2px solid #EDF2EC;
   }
 }
 
@@ -206,6 +221,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   transition: 0.5s;
+  text-align: center;
 }
 .header__button:hover {
   width: 128px;
@@ -225,12 +241,15 @@ body {
 }
 @media screen and (max-width: 650px) {
   .header__hamb {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: block;
     cursor: pointer;
+    z-index: 3;
   }
 }
-
-.header__hamb-bar {
+.header__hamb span {
   display: block;
   width: 40px;
   height: 2px;
@@ -239,13 +258,32 @@ body {
   background-color: rgb(29, 25, 41);
 }
 
+#header__toggle {
+  display: none;
+}
+#header__toggle:checked ~ .header__hamb > .header__hamb-bar:nth-child(1) {
+  opacity: 0;
+}
+#header__toggle:checked ~ .header__hamb > .header__hamb-bar:nth-child(2) {
+  transform: translateY(4px) rotate(45deg);
+}
+#header__toggle:checked ~ .header__hamb > .header__hamb-bar:nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+#header__toggle:checked ~ .header__hamb > .header__hamb-bar:nth-child(4) {
+  opacity: 0;
+}
+#header__toggle:checked ~ .header__nav > .header__nav-list {
+  right: 0%;
+}
+
 .choose {
   max-width: 1300px;
   margin: 0 auto;
-  padding-top: 125px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  padding-top: 125px;
 }
 @media screen and (max-width: 1350px) {
   .choose {
@@ -257,8 +295,7 @@ body {
     flex-direction: column;
   }
 }
-
-.choose__title {
+.choose .choose__title {
   max-width: 630px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -268,14 +305,14 @@ body {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 1050px) {
-  .choose__title {
+  .choose .choose__title {
     text-align: center;
     margin: 0px auto 40px;
     width: 90%;
   }
 }
 @media screen and (max-width: 850px) {
-  .choose__title {
+  .choose .choose__title {
     text-align: center;
     margin: 0px auto 40px;
     width: 90%;
@@ -286,8 +323,7 @@ body {
     letter-spacing: 0em;
   }
 }
-
-.choose-button {
+.choose .choose-button {
   width: 160px;
   height: 50px;
   border-radius: 16px;
@@ -303,26 +339,25 @@ body {
   letter-spacing: 0.02em;
   transition: 0.5s;
 }
-.choose-button:hover {
-  width: 128px;
+.choose .choose-button:hover {
+  width: 160px;
   height: 50px;
   border-radius: 16px;
   background: rgb(180, 56, 122);
   color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 1050px) {
-  .choose-button {
+  .choose .choose-button {
     margin: auto;
   }
 }
-
-.choose__cards {
+.choose .choose__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 12px;
 }
 @media screen and (max-width: 1050px) {
-  .choose__cards {
+  .choose .choose__cards {
     align-self: center;
     margin-top: 30px;
     width: 70%;
@@ -347,16 +382,14 @@ body {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 1050px) {
-  .features__img {
+  .features .features__img {
     display: block;
     margin: auto;
     width: 70%;
   }
 }
-
-.features__title {
+.features .features__title {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   line-height: 50px;
@@ -365,15 +398,14 @@ body {
   margin-top: 73px;
 }
 @media screen and (max-width: 1050px) {
-  .features__title {
+  .features .features__title {
     width: 70%;
     display: block;
     margin: 30px auto;
     text-align: center;
   }
 }
-
-.features__text {
+.features .features__text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -382,25 +414,23 @@ body {
   margin-top: 20px;
 }
 @media screen and (max-width: 1050px) {
-  .features__text {
+  .features .features__text {
     display: block;
     margin: 30px auto;
     width: 70%;
     text-align: center;
   }
 }
-
-.features__list {
+.features .features__list {
   padding-top: 17px;
 }
 @media screen and (max-width: 1050px) {
-  .features__list {
+  .features .features__list {
     width: 230px;
     margin: auto;
   }
 }
-
-.features__list-item {
+.features .features__list .features__list-item {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -408,21 +438,20 @@ body {
   letter-spacing: 0em;
   margin-top: 10px;
 }
-.features__list-item::before {
+.features .features__list .features__list-item::before {
   content: url(../assets/img/chek.png);
   margin-right: 20px;
 }
 
 .exchange {
   max-width: 1300px;
-  margin: 0px auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   padding: 30px;
   background: linear-gradient(358.2deg, rgba(178, 178, 178, 0.8) 8.06%, rgba(178, 178, 178, 0) 67.93%), linear-gradient(0deg, rgba(244, 244, 244, 0.9), rgba(244, 244, 244, 0.9));
   border-radius: 28px;
-  margin-top: 50px;
 }
 @media screen and (max-width: 1350px) {
   .exchange {
@@ -529,8 +558,7 @@ body {
     width: 90%;
   }
 }
-
-.world__title {
+.world .world__title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 50px;
@@ -538,8 +566,7 @@ body {
   letter-spacing: 0em;
   padding-top: 50px;
 }
-
-.world__text {
+.world .world__text {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 50px;
@@ -547,12 +574,11 @@ body {
   letter-spacing: 0em;
   padding-top: 8px;
 }
-
-.world__img {
+.world .world__img {
   margin-top: 38px;
 }
 @media screen and (max-width: 1050px) {
-  .world__img {
+  .world .world__img {
     width: 80%;
   }
 }
@@ -560,11 +586,10 @@ body {
 .support {
   max-width: 1300px;
   margin: 0px auto;
-  padding-top: 820px;
+  padding-top: 40px;
   text-align: center;
 }
-
-.support__text-color {
+.support .support__text-color {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   line-height: 35px;
@@ -572,8 +597,7 @@ body {
   letter-spacing: 0.02em;
   color: rgb(235, 128, 29);
 }
-
-.support__title {
+.support .support__title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   line-height: 44px;
@@ -581,8 +605,7 @@ body {
   letter-spacing: 0.02em;
   padding-top: 30px;
 }
-
-.support__text {
+.support .support__text {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 44px;
@@ -590,8 +613,7 @@ body {
   letter-spacing: 0.02em;
   padding: 23px 0px 55px 0px;
 }
-
-.support__form {
+.support .support__form {
   width: 525px;
   height: 90px;
   border-radius: 20px;
@@ -604,18 +626,17 @@ body {
   padding: 40px 20px 40px 40px;
 }
 @media screen and (max-width: 1050px) {
-  .support__form {
+  .support .support__form {
     width: 400px;
     padding: 20px 10px;
   }
 }
 @media screen and (max-width: 850px) {
-  .support__form {
+  .support .support__form {
     width: 300px;
   }
 }
-
-.support__form-input {
+.support .support__form .support__form-input {
   width: 270px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
@@ -623,7 +644,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
 }
-.support__form-input::-moz-placeholder {
+.support .support__form .support__form-input::-moz-placeholder {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   line-height: 29px;
@@ -633,7 +654,7 @@ body {
   text-align: left;
   padding-left: 10px;
 }
-.support__form-input::placeholder {
+.support .support__form .support__form-input::placeholder {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   line-height: 29px;
@@ -644,14 +665,14 @@ body {
   padding-left: 10px;
 }
 @media screen and (max-width: 850px) {
-  .support__form-input::-moz-placeholder {
+  .support .support__form .support__form-input::-moz-placeholder {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     line-height: 29px;
     font-size: 16px;
     letter-spacing: 0.02em;
   }
-  .support__form-input::placeholder {
+  .support .support__form .support__form-input::placeholder {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     line-height: 29px;
@@ -660,17 +681,16 @@ body {
   }
 }
 @media screen and (max-width: 1050px) {
-  .support__form-input {
+  .support .support__form .support__form-input {
     width: 150px;
   }
 }
 @media screen and (max-width: 850px) {
-  .support__form-input {
+  .support .support__form .support__form-input {
     width: 100px;
   }
 }
-
-.support__form-button {
+.support .support__form .support__form-button {
   width: 161px;
   height: 45px;
   border-radius: 20px;
@@ -687,7 +707,7 @@ body {
   align-items: center;
   transition: 0.5s;
 }
-.support__form-button:hover {
+.support .support__form .support__form-button:hover {
   width: 161px;
   height: 45px;
   border-radius: 20px;
@@ -695,16 +715,15 @@ body {
   color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 850px) {
-  .support__form-button {
+  .support .support__form .support__form-button {
     width: 130px;
   }
 }
-
-.support__form-sign {
+.support .support__form .support__form-button .support__form-sign {
   padding-right: 10px;
 }
 @media screen and (max-width: 850px) {
-  .support__form-sign {
+  .support .support__form .support__form-button .support__form-sign {
     padding-right: 5px;
   }
 }
@@ -729,20 +748,17 @@ body {
     width: 90%;
   }
 }
-
-.footer__contacts {
+.footer__container .footer__contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 @media screen and (max-width: 650px) {
-  .footer__logo {
+  .footer__container .footer__contacts .footer__logo {
     width: 100px;
   }
 }
-
-.footer__address-phone {
+.footer__container .footer__contacts .footer__address-phone {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   line-height: 44px;
@@ -751,7 +767,7 @@ body {
   color: rgb(0, 0, 0);
 }
 @media screen and (max-width: 490px) {
-  .footer__address-phone {
+  .footer__container .footer__contacts .footer__address-phone {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     line-height: 44px;
@@ -759,8 +775,7 @@ body {
     letter-spacing: 0em;
   }
 }
-
-.footer__address-email {
+.footer__container .footer__contacts .footer__address-email {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 24px;
@@ -770,8 +785,7 @@ body {
   display: inline-block;
   margin-top: 8px;
 }
-
-.footer__list {
+.footer__container .footer__list {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -779,14 +793,13 @@ body {
   padding: 30px 0px 20px 0px;
 }
 @media screen and (max-width: 1050px) {
-  .footer__list {
+  .footer__container .footer__list {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
   }
 }
-
-.footer__link {
+.footer__container .footer__list .footer__link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 24px;
@@ -797,16 +810,14 @@ body {
   margin: 0px 38px 10px 0px;
   transition: 0.5s;
 }
-.footer__link:hover {
+.footer__container .footer__list .footer__link:hover {
   color: rgb(180, 56, 122);
 }
-
-.footer__line {
+.footer__container .footer__line {
   width: 100%;
   border: 2px solid rgba(255, 255, 255, 0.81);
 }
-
-.footer__text {
+.footer__container .footer__text {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 24px;
@@ -815,7 +826,7 @@ body {
   padding-top: 30px;
 }
 @media screen and (max-width: 1050px) {
-  .footer__text {
+  .footer__container .footer__text {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     line-height: 24px;

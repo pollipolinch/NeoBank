@@ -1,8 +1,8 @@
 .choose {
     max-width: 1300px;
     margin: 0 auto;
-    padding-top: 125px;
     @include display-justify(flex, space-between, stretch);
+    padding-top: 125px;
 
     @media screen and (max-width:$breakpoint_xxl) {
         max-width: 1000px;
@@ -11,51 +11,50 @@
     @media screen and (max-width:$breakpoint_xl) {
         flex-direction: column;
     }
-}
 
-.choose__title {
-    max-width: 630px;
-    @include fonts('Ubuntu', 700, 48px, 48px, 0em);
-    margin-bottom: 40px;
+    .choose__title {
+        max-width: 630px;
+        @include fonts('Ubuntu', 700, 48px, 48px, 0em);
+        margin-bottom: 40px;
 
-    @media screen and (max-width:$breakpoint_xl) {
-        text-align: center;
-        margin: 0px auto 40px;
-        width: 90%;
+        @media screen and (max-width:$breakpoint_xl) {
+            text-align: center;
+            margin: 0px auto 40px;
+            width: 90%;
+        }
+
+        @media screen and (max-width:$breakpoint_md) {
+            text-align: center;
+            margin: 0px auto 40px;
+            width: 90%;
+            @include fonts('Ubuntu', 700, 48px, 36px, 0em);
+        }
     }
 
-    @media screen and (max-width:$breakpoint_md) {
-        text-align: center;
-        margin: 0px auto 40px;
-        width: 90%;
-        @include fonts('Ubuntu', 700, 48px, 36px, 0em);
-    }
-}
+    .choose-button {
+        @include button(160px, 50px, 16px, $color-blue, $color-white);
+        @include display-justify(flex, center, center);
+        @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
+        transition: 0.5s;
 
-.choose-button {
-    @include button(160px, 50px, 16px, $color-blue, $color-white);
-    @include display-justify(flex, center, center);
-    @include fonts('Ubuntu', 700, 18px, 16px, 0.02em);
-    transition: 0.5s;
+        &:hover {
+            @include button(160px, 50px, 16px, $color-pink, $color-white);
+        }
 
-    &:hover {
-        @include button(128px, 50px, 16px, $color-pink, $color-white);
+        @media screen and (max-width:$breakpoint_xl) {
+            margin: auto;
+        }
     }
 
-    @media screen and (max-width:$breakpoint_xl) {
-        margin: auto;
-    }
-}
+    .choose__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12px;
 
-
-.choose__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 12px;
-
-    @media screen and (max-width:$breakpoint_xl) {
-        align-self: center;
-        margin-top: 30px;
-        width: 70%;
+        @media screen and (max-width:$breakpoint_xl) {
+            align-self: center;
+            margin-top: 30px;
+            width: 70%;
+        }
     }
 }

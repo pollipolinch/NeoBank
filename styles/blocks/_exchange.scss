@@ -1,11 +1,10 @@
 .exchange {
     max-width: 1300px;
-    margin: 0px auto;
+    margin: 50px auto;
     @include display-justify(flex, space-between, stretch);
     padding: 30px;
     background: $color-grad-white-grey;
     border-radius: 28px;
-    margin-top: 50px;
 
     @media screen and (max-width:$breakpoint_xxl) {
         max-width: 1000px;

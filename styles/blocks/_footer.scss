@@ -1,6 +1,7 @@
 .footer {
     margin-top: 100px;
     background: $color-grad-grey;
+
 }
 
 .footer__container {
@@ -15,67 +16,67 @@
     @media screen and (max-width:$breakpoint_xl) {
         width: 90%;
     }
-}
 
-.footer__contacts {
-    @include display-justify(flex, space-between, center);
-}
+    .footer__contacts {
+        @include display-justify(flex, space-between, center);
 
-.footer__logo {
-    @media screen and (max-width:$breakpoint_s) {
-        width: 100px;
+        .footer__logo {
+            @media screen and (max-width:$breakpoint_s) {
+                width: 100px;
+            }
+        }
+
+
+        .footer__address-phone {
+            @include fonts('Ubuntu', 700, 44px, 30px, 0em);
+            color: $color-black;
+
+            @media screen and (max-width: $breakpoint_xs) {
+                @include fonts('Ubuntu', 700, 44px, 24px, 0em);
+            }
+        }
+
+        .footer__address-email {
+            @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
+            color: $color-black;
+            display: inline-block;
+            margin-top: 8px;
+        }
     }
-}
 
-.footer__address-phone {
-    @include fonts('Ubuntu', 700, 44px, 30px, 0em);
-    color: $color-black;
+    .footer__list {
+        @include display-justify(flex, flex-start, stretch);
+        flex-wrap: wrap;
+        padding: 30px 0px 20px 0px;
 
-    @media screen and (max-width: $breakpoint_xs) {
-        @include fonts('Ubuntu', 700, 44px, 24px, 0em);
+        @media screen and (max-width:$breakpoint_xl) {
+            @include display-justify(flex, space-between, stretch);
+        }
+
+        .footer__link {
+            @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
+            color: $color-black;
+            display: inline-block;
+            margin: 0px 38px 10px 0px;
+            transition: 0.5s;
+
+            &:hover {
+                color: $color-pink;
+            }
+        }
     }
-}
 
-.footer__address-email {
-    @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
-    color: $color-black;
-    display: inline-block;
-    margin-top: 8px;
-}
-
-.footer__list {
-    @include display-justify(flex, flex-start, stretch);
-    flex-wrap: wrap;
-    padding: 30px 0px 20px 0px;
-
-    @media screen and (max-width:$breakpoint_xl) {
-        @include display-justify(flex, space-between, stretch);
+    .footer__line {
+        width: 100%;
+        border: 2px solid $color-light-white
     }
-}
 
+    .footer__text {
+        @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
+        padding-top: 30px;
 
-.footer__link {
-    @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
-    color: $color-black;
-    display: inline-block;
-    margin: 0px 38px 10px 0px;
-    transition: 0.5s;
-
-    &:hover {
-        color: $color-pink;
-    }
-}
-
-.footer__line {
-    width: 100%;
-    border: 2px solid $color-light-white
-}
-
-.footer__text {
-    @include fonts('Ubuntu', 500, 24px, 16px, 0.02em);
-    padding-top: 30px;
-
-    @media screen and (max-width:$breakpoint_xl) {
-        @include fonts('Ubuntu', 500, 24px, 12px, 0.02em);
+        @media screen and (max-width:$breakpoint_xl) {
+            @include fonts('Ubuntu', 500, 24px, 12px, 0.02em);
+        }
     }
 }
