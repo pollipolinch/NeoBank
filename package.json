@@ -1,0 +1,19 @@
+{
+  "name": "neobank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "swiper": "^10.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
