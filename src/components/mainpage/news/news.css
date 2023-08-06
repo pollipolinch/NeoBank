@@ -1,0 +1,135 @@
+.news__title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.news__text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.swiper-container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    width: 320px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 1px solid rgba(187, 187, 187, 0.2);
+    background: white;
+    margin: 20px 0px;
+}
+
+.news__container_img {
+    width: 80%;
+    height: 120px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.news__link {
+    color: black;
+}
+
+.news__container_title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.news__container_text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    width: 90%;
+}
+
+.news__buttons_container {
+    margin-top: 40px;
+    margin-right: 12%;
+    display: flex;
+    justify-content: right;
+}
+
+.news__button_unactive {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    border: 1px solid rgba(0, 60, 255, 1);
+    margin-right: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(0, 60, 255, 1);
+    border: 1px solid rgba(0, 60, 255, 1);
+    margin: 0 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev{
+    background-image: url(../../../assets/img/arrow-white.png);
+    transform: rotate(180deg);
+}
+.swiper-button-next{
+    background-image: url(../../../assets/img/arrow-white.png);
+}
+
+.swiper-button-prev.swiper-button-disabled{
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/img/arrow-black.png);
+    transform: rotate(0deg);
+    cursor: auto;
+}
+.swiper-button-next.swiper-button-disabled{
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/img/arrow-black.png);
+    transform: rotate(180deg);
+    cursor: auto;
+}
+
+@media screen and (max-width:1050px) {
+    .news__container {
+        width: 250px;
+    }
+    .news__container_title{
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .news__container_text{
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
