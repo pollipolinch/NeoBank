@@ -1,0 +1,129 @@
+.support {
+    max-width: 1300px;
+    margin: 0px auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.support__text_color {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 35px;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: rgb(235, 128, 29);
+    padding-top: 27px;
+}
+
+.support__title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 44px;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    padding-top: 30px;
+}
+
+.support__text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    padding: 23px 0px 55px 0px;
+}
+
+.support__form {
+    width: 525px;
+    height: 90px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    color: rgb(144, 146, 176);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px 40px;
+}
+
+.support__form_input {
+    width: 270px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+ .support__form_input::placeholder {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: rgb(144, 146, 176);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.support__form_button {
+    width: 161px;
+    height: 45px;
+    border-radius: 20px;
+    background: rgb(104, 109, 241);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.support__form_button:hover {
+    width: 161px;
+    height: 45px;
+    border-radius: 20px;
+    background: rgb(180, 56, 122);
+    color: rgb(255, 255, 255);
+}
+
+.support__form_sign {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .support__form {
+        width: 400px;
+        padding: 20px 10px;
+    }
+    .support__form_input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .support__form {
+        width: 300px;
+    }
+    .support__form_input::placeholder {
+        font-size: 16px;
+    }
+    .support__form_input {
+        width: 100px;
+    }
+    .support__form_button {
+        width: 130px;
+    }
+    .support__form_sign {
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .support__form_input::placeholder {
+        font-size: 14px;
+    }
+}

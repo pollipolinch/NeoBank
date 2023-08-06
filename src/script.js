@@ -4,6 +4,7 @@ import Features from "./components/mainpage/features/Features";
 import Exchange from "./components/mainpage/exchange/Exchange";
 import World from "./components/mainpage/world/World";
 import News from "./components/mainpage/news/News";
+import Support from "./components/mainpage/support/Support";
 
 (async () => {
 	Header.show()
@@ -11,6 +12,7 @@ import News from "./components/mainpage/news/News";
     Features.show()
     World.show()
     await News.show()
+    Support.show()
     await Exchange.show()
 	setInterval(Exchange.show, 900000)
 })()
