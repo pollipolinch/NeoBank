@@ -1,7 +1,7 @@
 const newsContainer = document.querySelector('#news');
 import { url_news } from "../../../utils/Api";
 import { checkImg } from "../../../utils/checkImg";
-import { checkDesc } from "../../../utils/checkDesc"
+import { checkDesc } from "../../../utils/checkDesc";
 import './news.css'
 import Swiper from 'swiper'
 import { Navigation } from 'swiper/modules'
