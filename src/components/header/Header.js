@@ -3,7 +3,7 @@ import './header.css'
 
 class Header {
     show() {
-        let template = `
+        const template = `
         <header class="header">
         <a href="#" class="header__logo">NeoBank</a>
         <input id="header__toggle" type="checkbox" />

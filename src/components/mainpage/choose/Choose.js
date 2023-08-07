@@ -1,14 +1,11 @@
 const choose = document.querySelector('#choose');
-import card1 from '../../../assets/img/cardImage1.png'
-import card2 from '../../../assets/img/cardImage2.png'
-import card3 from '../../../assets/img/cardImage3.png'
-import card4 from '../../../assets/img/cardImage4.png'
+import {card1,card2,card3,card4} from '../../../helpers/cardImage'
 import './choose.css'
 
 
 class Choose {
     show() {
-        let template = `
+        const template = `
         <section class="choose">
         <div class="choose__info">
             <h1 class="choose__title">Choose the design you like and apply for card right now</h1>

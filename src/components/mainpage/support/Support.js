@@ -6,7 +6,7 @@ import './support.css'
 
 class Support {
     show() {
-        let template = `
+        const template = `
         <section class="support">
         <p class="support__text_color">Support</p>
         <h2 class="support__title">Subscribe Newsletter & get</h2>

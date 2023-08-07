@@ -5,12 +5,12 @@ import './exchange.css'
 
 class Exchange {
     async show() {
-        let date = new Date();
-        let today = date.toLocaleDateString();
+        const date = new Date();
+        const today = date.toLocaleDateString();
         let exchangeContent = '';
         const typesOfCur = ['USD', 'EUR', 'CNY', 'JPY', 'CHF', 'TRY']
         for (let i = 0; i < typesOfCur.length; i++) {
-            let url = `${url_exchange}from=${typesOfCur[i]}&to=RUB&q=1`;
+            const url = `${url_exchange}from=${typesOfCur[i]}&to=RUB&q=1`;
             const options = {
                 method: 'GET',
                 headers: {
@@ -32,7 +32,7 @@ class Exchange {
             }
         }
 
-        let template = `
+        const template = `
         <section class="exchange">
         <div class="exchange__currency">
             <h2 class="exchange__title">Exchange rate in internet bank</h2>

@@ -5,7 +5,7 @@ import './features.css'
 
 class Features {
     show() {
-        let template = `
+        const template = `
         <section class="features">
         <img class="features__img" src=${human} alt="human">
         <div class="features__info">

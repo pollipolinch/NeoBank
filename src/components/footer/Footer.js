@@ -4,7 +4,7 @@ const footer = document.querySelector('#footer');
 
 class Footer {
     show() {
-        let template = `
+        const template = `
         <footer class="footer">
         <div class="footer__container">
             <div class="footer__contacts">

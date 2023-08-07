@@ -24,7 +24,7 @@ class News {
             const urlToImage = news[i].urlToImage
             const url = news[i].url
             const title = news[i].title
-            let description = news[i].description
+            const description = news[i].description
             const imgValid = urlToImage !== null ? await checkImg.isUrl(urlToImage) : false
             const descValid = description !== null ? await checkDesc.isDesc(description) : false
             if (imgValid && descValid) {
@@ -36,7 +36,7 @@ class News {
               </div>
               `
             }
-            let template = `
+            const template = `
             <section class="news">
             <h2 class="news__title">Current news from the world of finance</h2>
             <p class="news__text">We update the news feed every 15 minutes. You can learn more by clicking on the news
