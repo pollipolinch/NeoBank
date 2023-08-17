@@ -1,0 +1,139 @@
+.caurousel__buttons_container {
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+
+.caurousel__about {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caurousel__about_mini {
+    width: 407px;
+    height: 236px;
+    border-radius: 28px;
+    background: rgba(234, 236, 238, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.caurousel__about_maxi {
+    width: 630px;
+    height: 236px;
+    border-radius: 28px;
+    background: rgba(234, 236, 238, 1);
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.caurousel__about_grey {
+    background: rgba(127, 146, 172, 0.7);
+}
+
+.caurousel__about_title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    margin: 20px 0;
+}
+
+.caurousel__about_text {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.caurousel__rates_info {
+    display: flex;
+    padding: 25px 0;
+    margin-left: 5%;
+    width: 80%;
+}
+
+
+.caurousel__rates_title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    width: 25%;
+}
+
+.caurousel__rates_text {
+    width: 70%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(67, 67, 67, 1);
+    margin-left: 5%;
+}
+
+.caurousel__cashback {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caurousel__cashback_back {
+    width: 406px;
+    height: 163px;
+    border-radius: 28px;
+    background: rgba(234, 236, 238, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    padding: 30px 0 0 30px;
+    margin: 15px 0;
+}
+
+.caurousel__cashback_green {
+    background: rgba(136, 179, 184, 0.6);
+}
+
+.caurousel__cashback_info {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(67, 67, 67, 0.9);
+    height: 50px;
+
+}
+
+.caurousel__cashback_number {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.caurousel__accordion_title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    padding: 20px 0 20px 5%;
+}
+
+@media screen and (max-width: 550px) {
+    .caurousel__rates_text{
+        width: 65%;
+        margin-left: 10%;
+    }
+  }

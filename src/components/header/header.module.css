@@ -1,5 +1,4 @@
 @import '../../style/settings.css';
-@import '../../assets/fonts/fonts.css';
 
 .header {
   max-width: 1300px;
@@ -36,9 +35,17 @@
   transition: 0.5s;
   cursor: pointer;
 }
-
+.header__nav_link_selected{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #B2A35F;
+  cursor: pointer;
+}
 .header__nav_link:hover {
-  color: rgb(180, 56, 122);
+  color: #B2A35F;
 }
 
 .header__button {
@@ -59,7 +66,7 @@
 }
 
 .header__button:hover {
-  background: rgb(180, 56, 122);
+  background: #7796c0;
 }
 
 .header__hamb {
@@ -74,27 +81,62 @@
   transition: all 0.3s ease-in-out;
   background-color: rgb(29, 25, 41);
 }
-#header__toggle{
-  display: none;
-}
-#header__toggle:checked~.header__hamb>.header__hamb-bar:nth-child(1) {
+
+.header__hamb_bar_first {
   opacity: 0;
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(29, 25, 41);
 }
 
-#header__toggle:checked~.header__hamb>.header__hamb-bar:nth-child(2) {
+.header__hamb_bar_second {
   transform: translateY(4px) rotate(45deg);
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(29, 25, 41);
 }
 
-#header__toggle:checked~.header__hamb>.header__hamb-bar:nth-child(3) {
+.header__hamb_bar_third {
   transform: translateY(-4px) rotate(-45deg);
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(29, 25, 41);
 }
 
-#header__toggle:checked~.header__hamb>.header__hamb-bar:nth-child(4) {
+.header__hamb_bar_fourth {
   opacity: 0;
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(29, 25, 41);
 }
 
-#header__toggle:checked~.header__nav>.header__nav-list {
+.header__nav_list_active {
   right: 0%;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 120px 0;
+  background-color: rgba(245, 244, 255, 1);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+  z-index: 2;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1350px) {
@@ -124,10 +166,6 @@
 }
 
 @media screen and (max-width: 650px) {
-  .header__nav {
-    display: none;
-  }
-
   .header__button {
     display: none;
   }
@@ -158,9 +196,7 @@
   }
   .header__nav_link{
     font-size: 16px;
-    width: 100vw;
     text-align: center;
-    border-bottom: 2px solid #EDF2EC;
     padding-top: 30px;
   }
 

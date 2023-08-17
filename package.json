@@ -1,16 +1,26 @@
 {
-  "name": "neo-bank",
+  "name": "neobank",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.38",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "bootstrap": "^5.3.1",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2",
+    "react-hook-form": "^7.45.4",
+    "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,6 +48,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@types/react-scroll": "^1.8.7",
+    "eslint-config-airbnb": "^19.0.4",
+    "prettier": "^3.0.1"
   }
 }

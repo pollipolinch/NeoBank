@@ -1,0 +1,289 @@
+.getCard__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.getCard__steps {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.getCard__figure {
+    display: flex;
+    align-items: center;
+}
+
+.getCard__circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.getCard__line {
+    width: 60%;
+    height: 2px;
+    background: rgba(128, 128, 128, 0.2);
+    margin-left: 30px;
+}
+
+.getCard__text {
+    width: 70%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.getCard__container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.getCard__container_info {
+    display: flex;
+}
+
+.getCard__container_steps {
+    margin: 30px 0;
+    display: flex;
+}
+
+.getCard__container__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 75%;
+}
+
+.getCard__container_stepNum {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.getCard__container_text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 20px 0;
+}
+
+.getCard__amount {
+    width: 95%;
+    border: 1px solid rgba(91, 53, 213, 1);
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 80px 10px 30px;
+}
+
+.getCard__container_nums {
+    display: flex;
+    justify-content: space-between;
+}
+
+.getCard__amount_num {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(120, 109, 109, 1);
+}
+
+.getCard__container_slider {
+    width: 300px;
+    -webkit-appearance: none;
+    background: #000000;
+    cursor: pointer;
+}
+.getCard__container_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #5b35d5;
+    margin-top: -10px;
+}
+
+.getCard__container_slider::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: #5b35d5;
+}
+
+.getCard__container_about {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.getCard__container_info_left {
+    border-right: 1px dashed rgba(128, 128, 128, 0.4);
+    padding-left: 30px;
+}
+
+.getCard__container_info_right {
+    padding: 25px 30px;
+}
+
+.getCard__container_range {
+    width: 200px;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.getCard__select {
+    padding: 10px 30px;
+}
+
+.getCard__select_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.getCard__select_label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 20px 0;
+}
+
+.getCard__input_container {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.getCard__input_container svg {
+    position: relative;
+    right: 25px;
+}
+
+.getCard__select_input {
+    width: 270px;
+    height: 40px;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    background: rgba(249, 245, 227, 1);
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    color: rgba(128, 128, 128, 1);
+    padding: 0 10px;
+}
+
+.getCard__select_input:focus {
+    border-color: #5b35d5;
+}
+.getCard__select_input_error {
+    width: 270px;
+    height: 40px;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    background: rgba(249, 245, 227, 1);
+    border-radius: 6px;
+    border: 2px solid #ff5631;
+    color: rgba(128, 128, 128, 1);
+    padding: 0 10px;
+}
+
+.getCard__select_cont {
+    display: block;
+    width: 270px;
+    height: 40px;
+    background: rgba(249, 245, 227, 1);
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.getCard__errors {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ff5631;
+}
+
+.getCard__select_stars {
+    color: rgba(255, 0, 0, 1);
+}
+
+.getCard__button_container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0;
+}
+
+.getCard__button {
+    width: 148px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(0, 60, 255, 1);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    transition: 0.5s;
+}
+
+.getCard__button:hover {
+    background: #7796c0;
+}
+
+@media screen and (max-width: 1350px) {
+    .getCard__container_info {
+        flex-wrap: wrap;
+    }
+
+    .getCard__container_info {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .getCard__select_container {
+        justify-content: center;
+    }
+
+    .getCard__select_input {
+        margin-right: 10px;
+    }
+
+    .getCard__container_info_left {
+        width: 90%;
+    }
+}

@@ -31,7 +31,14 @@
     letter-spacing: 0.02em;
     padding: 23px 0px 55px 0px;
 }
-
+.support__post_text{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: rgb(180, 56, 122)
+}
 .support__form {
     width: 525px;
     height: 90px;
@@ -52,6 +59,7 @@
     line-height: 29px;
     font-size: 20px;
     letter-spacing: 0.02em;
+    color: black;
 }
 
  .support__form_input::placeholder {
