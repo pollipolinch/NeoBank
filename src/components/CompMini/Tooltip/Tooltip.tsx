@@ -6,7 +6,7 @@ type TTooltip = {
     text: string;
 };
 
-const Tooltip: React.FC<TTooltip> = ({ children, text }) => {
+export const Tooltip: React.FC<TTooltip> = ({ children, text }) => {
     const [showTool, setShowTool] = useState(false);
     const mouseEnter = () => {
         setShowTool(true);
@@ -25,5 +25,3 @@ const Tooltip: React.FC<TTooltip> = ({ children, text }) => {
         </div>
     );
 };
-
-export default Tooltip;

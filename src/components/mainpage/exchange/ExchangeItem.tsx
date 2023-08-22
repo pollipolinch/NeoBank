@@ -7,7 +7,7 @@ import {
 } from '../../../utils/constants/Api';
 import { IExchangeItem } from '../../../utils/types/types';
 
-export default function ExchangeItem({ value }: IExchangeItem) {
+export const ExchangeItem = ({ value }: IExchangeItem) => {
     const [currency, setCurrency] = useState<number | null>(null);
     const getExchange = async (value: string) => {
         let url = `${url_exchange}from=${value}&to=RUB&q=1`;
@@ -47,4 +47,4 @@ export default function ExchangeItem({ value }: IExchangeItem) {
             </span>
         </p>
     );
-}
+};

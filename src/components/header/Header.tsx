@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useNavigate } from 'react-router-dom';
 import style from './header.module.css';
 
-export default function Header() {
+export const Header = () => {
     const [burgerMenu, setBurgerMenu] = useState(false);
     const openBurger = () => {
         setBurgerMenu(!burgerMenu);
@@ -83,4 +83,4 @@ export default function Header() {
             <button className={style.header__button}>Online Bank</button>
         </header>
     );
-}
+};

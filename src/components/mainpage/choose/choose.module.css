@@ -6,7 +6,16 @@
   justify-content: space-between;
   align-items: stretch;
 }
-
+@media screen and (max-width: 1350px) {
+  .choose {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .choose {
+    flex-direction: column;
+  }
+}
 .choose__title {
   max-width: 630px;
   font-family: "Ubuntu", sans-serif;
@@ -15,7 +24,18 @@
   font-size: 48px;
   margin-bottom: 40px;
 }
-
+@media screen and (max-width: 1050px) {
+  .choose__title {
+    text-align: center;
+    margin: 0px auto 40px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .choose__title {
+    font-size: 36px;
+  }
+}
 .choose_button {
   width: 160px;
   height: 50px;
@@ -32,54 +52,26 @@
   letter-spacing: 0.02em;
   transition: 0.5s;
 }
-
+@media screen and (max-width: 1050px) {
+  .choose_button {
+    margin: auto;
+  }
+}
 .choose_button:hover {
   background: #7796c0;
 }
-
 .choose__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 12px;
 }
-
-.choose__card {
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 1350px) {
-  .choose {
-    max-width: 1000px;
-  }
-}
-
 @media screen and (max-width: 1050px) {
-  .choose {
-    flex-direction: column;
-  }
-
-  .choose__title {
-    text-align: center;
-    margin: 0px auto 40px;
-    width: 90%;
-  }
-
-  .choose_button {
-    margin: auto;
-  }
-
   .choose__cards {
     align-self: center;
     margin-top: 30px;
     width: 70%;
   }
 }
-
-@media screen and (max-width: 850px) {
-  .choose__title {
-    text-align: center;
-    margin: 0px auto 40px;
-    width: 90%;
-    font-size: 36px;
-  }
-}
+.choose__card {
+  border-radius: 10px;
+}/*# sourceMappingURL=choose.module.css.map */

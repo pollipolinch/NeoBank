@@ -3,9 +3,9 @@ import style from './news.module.css';
 import { useEffect, useState } from 'react';
 import { url_news } from '../../../utils/constants/Api';
 import { News } from '../../../utils/types/types';
-import NewsItem from './NewsItem';
+import { NewsItem } from './NewsItem';
 
-export default function NewsSection() {
+export const NewsSection = () => {
     const [news, setNews] = useState([]);
     const [firstNews, setFirsrNews] = useState(0);
     const nextSlide = () => {
@@ -79,4 +79,4 @@ export default function NewsSection() {
             </div>
         </section>
     );
-}
+};

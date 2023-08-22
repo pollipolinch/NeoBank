@@ -1,7 +1,7 @@
 import style from './news.module.css';
 import { NewsIt } from '../../../utils/types/types';
 
-export default function NewsItem({ data }: NewsIt) {
+export const NewsItem = ({ data }: NewsIt) => {
     return (
         <div className={style.swiper_slide}>
             <img
@@ -20,4 +20,4 @@ export default function NewsItem({ data }: NewsIt) {
             <p className={style.news__container_text}>{data.description}</p>
         </div>
     );
-}
+};

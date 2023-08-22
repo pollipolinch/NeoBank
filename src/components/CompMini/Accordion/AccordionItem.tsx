@@ -4,7 +4,7 @@ import style from './accordion.module.css';
 import { IPropsAccord } from '../../../utils/types/types';
 
 export const AccordionItem: FC<IPropsAccord> = ({
-    faqItem,
+    faqItem: { q, a },
     onClick,
     isOpen,
 }) => {
@@ -15,7 +15,7 @@ export const AccordionItem: FC<IPropsAccord> = ({
                 className={style.accordion_header}
                 onClick={() => onClick()}
             >
-                {faqItem.q}
+                {q}
                 <img
                     className={
                         isOpen
@@ -31,7 +31,7 @@ export const AccordionItem: FC<IPropsAccord> = ({
                 style={isOpen ? { height: '110px' } : { height: '0px' }}
             >
                 <div className={style.accordion_body} ref={itemRef}>
-                    {faqItem.a}
+                    {a}
                 </div>
             </div>
         </li>

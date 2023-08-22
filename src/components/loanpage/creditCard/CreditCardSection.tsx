@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './creditCard.module.css';
 import { card1 } from '../../../helpers/image';
-import Tooltip from '../../comp-mini/tooltip/Tooltip';
+import { Tooltip } from '../../CompMini/Tooltip/Tooltip';
 
-export default function CreditCardSection() {
+export const CreditCardSection = () => {
     return (
         <section className={style.credit_card}>
             <div className={style.credit_card__background}>
@@ -77,4 +77,4 @@ export default function CreditCardSection() {
             </div>
         </section>
     );
-}
+};

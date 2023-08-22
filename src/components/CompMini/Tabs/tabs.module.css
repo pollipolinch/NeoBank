@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+}
+
+.caurousel__button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: rgb(123, 116, 84);
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.caurousel__button:hover {
+  color: #b2a35f;
+}
+.caurousel__button_selected {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: rgb(123, 116, 84);
+  margin-left: 30px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #7b7454;
+}/*# sourceMappingURL=tabs.module.css.map */

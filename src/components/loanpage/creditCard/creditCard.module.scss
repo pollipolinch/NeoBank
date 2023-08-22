@@ -1,0 +1,99 @@
+.credit_card {
+    &__background {
+        width: 90%;
+        border-radius: 29px;
+        background: linear-gradient(
+            180.8deg,
+            rgba(203, 213, 224, 0.624) 34.33%,
+            rgba(254, 235, 200, 0.56) 64.27%
+        );
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        @media screen and (max-width: 1050px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__info {
+        padding: 50px 0 50px 30px;
+        @media screen and (max-width: 1050px) {
+            padding: 50px 30px;
+        }
+    }
+
+    &_title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: white;
+    }
+
+    &__img {
+        width: 380px;
+        height: 226px;
+        border-radius: 20px;
+        rotate: 15deg;
+        margin: auto 50px;
+        @media screen and (max-width: 1050px) {
+            width: 300px;
+            height: 180px;
+            display: block;
+            margin: 0 auto 80px;
+        }
+    }
+
+    &__text {
+        width: 70%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        margin-top: 40px;
+    }
+
+    &_about {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0px;
+        @media screen and (max-width: 1050px) {
+            flex-wrap: wrap;
+        }
+        &_number {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+        }
+
+        &_text {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+        }
+    }
+
+    &_button {
+        width: 145px;
+        height: 50px;
+        border-radius: 8px;
+        background: rgba(0, 60, 255, 1);
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        transition: 0.5s;
+        &:hover {
+            background: rgba(119, 150, 192, 1);
+        }
+    }
+}

@@ -1,27 +1,26 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import ChooseSection from "../../components/mainpage/choose/ChooseSection";
-import FeaturesSection from "../../components/mainpage/features/FeaturesSection";
-import ExchangeSection from "../../components/mainpage/exchange/ExchangeSection";
-import NewsSection from "../../components/mainpage/news/NewsSection";
-import WorldSection from "../../components/mainpage/world/WorldSection";
-import SupportSection from "../../components/mainpage/support/SupportSection";
-
+import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
+import { ChooseSection } from '../../components/Mainpage/Choose/ChooseSection';
+import { FeaturesSection } from '../../components/Mainpage/Features/FeaturesSection';
+import { ExchangeSection } from '../../components/Mainpage/Exchange/ExchangeSection';
+import { NewsSection } from '../../components/Mainpage/News/NewsSection';
+import { WorldSection } from '../../components/Mainpage/World/WorldSection';
+import { SupportSection } from '../../components/Mainpage/Support/SupportSection';
 
 const Main = () => {
-  return (
-    <>
-      <div>
-        <Header />
-        <ChooseSection />
-        <FeaturesSection/>
-        <ExchangeSection/>
-        <NewsSection/>
-        <WorldSection/>
-        <SupportSection/>
-        <Footer/>
-      </div>
-    </>
-  );
-}
+    return (
+        <>
+            <div>
+                <Header />
+                <ChooseSection />
+                <FeaturesSection />
+                <ExchangeSection />
+                <NewsSection />
+                <WorldSection />
+                <SupportSection />
+                <Footer />
+            </div>
+        </>
+    );
+};
 export default Main;

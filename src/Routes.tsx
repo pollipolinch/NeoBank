@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Main from '../pages/main/Main';
-import Loan from '../pages/loan/Loan';
+import Main from '../src/pages/main/Main';
+import Loan from '../src/pages/loan/Loan';
 
-function App() {
+export const Routs = () => {
     return (
         <>
             <Routes>
@@ -11,6 +11,4 @@ function App() {
             </Routes>
         </>
     );
-}
-
-export default App;
+};

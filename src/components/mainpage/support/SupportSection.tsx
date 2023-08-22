@@ -3,7 +3,7 @@ import { tg_sign, mail_sign } from '../../../helpers/image';
 import { useEffect, useState } from 'react';
 import { request } from '../../../utils/requests/Request';
 
-export default function SupportSection() {
+export const SupportSection = () => {
     const [mailSub, setMailSub] = useState('');
     const [showCont, setShowCont] = useState(false);
 
@@ -64,4 +64,4 @@ export default function SupportSection() {
             )}
         </section>
     );
-}
+};

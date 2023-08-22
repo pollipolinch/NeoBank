@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import { Accordion } from '../../comp-mini/accordion/Accordion';
-import Divider from '../../comp-mini/divider/Divider';
+import { Accordion } from '../../CompMini/Accordion/Accordion';
+import { Divider } from '../../CompMini/Divider/Divider';
 import style from './carousel.module.css';
-import { FAQfirst, FAQsecond } from '../../comp-mini/accordion/accordion.data';
+import { FAQfirst, FAQsecond } from '../../CompMini/Accordion/accordion.data';
 import { money, calendar, clock, bag, card } from '../../../helpers/image';
-import { Tabs } from '../../comp-mini/tabs/Tabs';
+import { Tabs } from '../../CompMini/Tabs/Tabs';
 import { TTab } from '../../../utils/types/types';
 
-export default function CarouselSection() {
+export const CarouselSection = () => {
     const Tab: TTab[] = [
         { id: '1', label: 'About card' },
         { id: '2', label: 'Rates and conditions' },
@@ -264,4 +264,4 @@ export default function CarouselSection() {
             </div>
         </section>
     );
-}
+};

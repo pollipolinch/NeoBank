@@ -1,6 +1,6 @@
 import style from './getCard.module.css';
 import { useState } from 'react';
-import LoaderCom from '../../comp-mini/loader/LoaderCom';
+import { LoaderCom } from '../../CompMini/Loader/LoaderCom';
 import { CardForm, Month } from '../../../utils/types/types';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { monthSelect } from '../../../utils/constants/monthSelect';
@@ -9,7 +9,7 @@ import ErrorIcon from '../../../assets/icons/ErrorIcon';
 import { request } from '../../../utils/requests/Request';
 import classNames from 'classnames';
 
-export default function GetCardSection() {
+export const GetCardSection = () => {
     const {
         register,
         handleSubmit,
@@ -498,4 +498,4 @@ export default function GetCardSection() {
             )}
         </section>
     );
-}
+};
