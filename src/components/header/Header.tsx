@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 import { useNavigate } from 'react-router-dom';
 import style from './header.module.css';
@@ -9,19 +9,18 @@ export const Header = () => {
         setBurgerMenu(!burgerMenu);
     };
     const navigate = useNavigate();
-    const currentUrl = window.location.href;
-    const [page, setPage] = useState('/');
+    const isLoan = window.location.href.includes('loan');
     const toLoanPage = () => {
         navigate('/loan');
+        window.location.reload();
+    };
+    const toNotFoundPage = () => {
+        navigate('/notfound');
     };
     const toMainPage = () => {
         navigate('/');
     };
-    useEffect(() => {
-        currentUrl[currentUrl.length - 1] === '/'
-            ? setPage('/')
-            : setPage('/loan');
-    }, [currentUrl]);
+
     return (
         <header className={style.header}>
             <h2 onClick={() => toMainPage()} className={style.header__logo}>
@@ -68,16 +67,31 @@ export const Header = () => {
                     <li
                         onClick={() => toLoanPage()}
                         className={classNames(
-                            page === '/loan'
+                            isLoan
                                 ? style.header__nav_link_selected
                                 : style.header__nav_link
                         )}
                     >
                         Credit card
                     </li>
-                    <li className={style.header__nav_link}>Product</li>
-                    <li className={style.header__nav_link}>Account</li>
-                    <li className={style.header__nav_link}>Resources</li>
+                    <li
+                        onClick={() => toNotFoundPage()}
+                        className={style.header__nav_link}
+                    >
+                        Product
+                    </li>
+                    <li
+                        onClick={() => toNotFoundPage()}
+                        className={style.header__nav_link}
+                    >
+                        Account
+                    </li>
+                    <li
+                        onClick={() => toNotFoundPage()}
+                        className={style.header__nav_link}
+                    >
+                        Resources
+                    </li>
                 </ul>
             </nav>
             <button className={style.header__button}>Online Bank</button>

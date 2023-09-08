@@ -1,0 +1,55 @@
+.offers {
+  display: flex;
+  justify-content: center;
+  margin: 30px 5%;
+  flex-wrap: wrap;
+}
+.offers__container {
+  margin: 10px 10px;
+  width: 295px;
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.0784313725);
+  border: 2px solid white;
+  transition: 0.5s;
+}
+.offers__container:hover {
+  border-color: #003cff;
+}
+.offers__img {
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+}
+.offers__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 5px 5px 0;
+}
+.offers__iconContent {
+  display: flex;
+  justify-content: center;
+}
+.offers__button {
+  width: 148px;
+  height: 48px;
+  border-radius: 8px;
+  background: #003cff;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  display: block;
+  margin: 60px auto 40px;
+  transition: 0.5s;
+}
+.offers__button:hover {
+  background: #7796c0;
+}/*# sourceMappingURL=offers.module.css.map */

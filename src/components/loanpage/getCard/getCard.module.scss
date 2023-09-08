@@ -98,7 +98,7 @@
             justify-content: space-between;
         }
         &_slider {
-            width: 300px;
+            width: 100%;
             -webkit-appearance: none;
             background: #000000;
             cursor: pointer;
@@ -238,6 +238,9 @@
     &__input_container svg {
         position: relative;
         right: 25px;
+        @media screen and (max-width: 700px) {
+            right: 35px;
+        }
     }
 
     &__errors {
@@ -269,5 +272,31 @@
         &:hover {
             background: #7796c0;
         }
+    }
+}
+.select__container {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #5b35d5;
+    margin: 70px auto;
+    &_title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding: 20px 0;
+        color: #1c1c1e;
+    }
+    &_text {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #4f5665;
+        padding-bottom: 20px;
     }
 }

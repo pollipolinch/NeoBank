@@ -40,12 +40,23 @@
   letter-spacing: 0.02em;
   margin: 20px 0;
 }
+@media screen and (max-width: 500px) {
+  .caurousel__about_title {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
 .caurousel__about_text {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+@media screen and (max-width: 500px) {
+  .caurousel__about_text {
+    font-size: 12px;
+  }
 }
 .caurousel__rates_info {
   display: flex;

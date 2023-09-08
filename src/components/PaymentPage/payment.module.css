@@ -1,0 +1,149 @@
+.payment {
+  width: 90%;
+  margin: auto;
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+}
+.payment_info {
+  padding: 20px;
+  display: flex;
+}
+@media screen and (max-width: 1350px) {
+  .payment_info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .payment_info {
+    justify-content: space-around;
+  }
+}
+.payment_title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .payment_title {
+    width: 70%;
+  }
+}
+.payment_stepNum {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.payment_table {
+  width: 100%;
+}
+.payment_header {
+  display: block;
+  margin: 0 5%;
+  border-bottom: 1px solid #e2e8f0;
+}
+.payment_header_item {
+  display: inline-block;
+  padding: 0 0 15px 0;
+  width: 16%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #4a5568;
+}
+.payment_body {
+  display: block;
+  margin: 0 5%;
+  border-bottom: 1px solid #e2e8f0;
+}
+.payment_body_item {
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  padding: 10px 0;
+  width: 16%;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.payment .button_up {
+  display: inline-block;
+  cursor: pointer;
+  content: url(../../assets/img/Arrow_drop_up.png);
+}
+.payment .button_down {
+  display: inline-block;
+  cursor: pointer;
+  content: url(../../assets/img/Arrow_drop_down.png);
+}
+.payment_container {
+  padding: 20px 0;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment_form_label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.payment_button_send {
+  width: 96px;
+  height: 40px;
+  border-radius: 8px;
+  background: #003cff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.payment_button_send:hover {
+  background: #7796c0;
+}
+.payment_button_send_disabled {
+  width: 96px;
+  height: 40px;
+  border-radius: 8px;
+  background: #7796c0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-left: 40px;
+  cursor: default !important;
+}
+.payment_button_deny {
+  width: 96px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(217, 55, 55, 0.8);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: white;
+  transition: 0.5s;
+}
+.payment_button_deny:hover {
+  background: #7796c0;
+}
+
+.form__container {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=payment.module.css.map */

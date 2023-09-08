@@ -90,7 +90,7 @@
   justify-content: space-between;
 }
 .getCard__container_slider {
-  width: 300px;
+  width: 100%;
   -webkit-appearance: none;
   background: #000000;
   cursor: pointer;
@@ -223,6 +223,11 @@
   position: relative;
   right: 25px;
 }
+@media screen and (max-width: 700px) {
+  .getCard__input_container svg {
+    right: 35px;
+  }
+}
 .getCard__errors {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
@@ -250,4 +255,31 @@
 }
 .getCard__button:hover {
   background: #7796c0;
+}
+
+.select__container {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #5b35d5;
+  margin: 70px auto;
+}
+.select__container_title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 20px 0;
+  color: #1c1c1e;
+}
+.select__container_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #4f5665;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=getCard.module.css.map */

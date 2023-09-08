@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 import { Accordion } from '../../CompMini/Accordion/Accordion';
 import { Divider } from '../../CompMini/Divider/Divider';
 import style from './carousel.module.css';
-import { FAQfirst, FAQsecond } from '../../CompMini/Accordion/accordion.data';
-import { money, calendar, clock, bag, card } from '../../../helpers/image';
+import { FAQfirst, FAQsecond } from '../../../utils/constants/accordion.data';
+import {
+    money,
+    calendar,
+    clock,
+    bag,
+    card,
+} from '../../../utils/helpers/image';
 import { Tabs } from '../../CompMini/Tabs/Tabs';
 import { TTab } from '../../../utils/types/types';
 

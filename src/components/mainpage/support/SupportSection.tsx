@@ -1,5 +1,5 @@
 import style from './support.module.css';
-import { tg_sign, mail_sign } from '../../../helpers/image';
+import { tg_sign, mail_sign } from '../../../utils/helpers/image';
 import { useEffect, useState } from 'react';
 import { request } from '../../../utils/requests/Request';
 
@@ -10,8 +10,8 @@ export const SupportSection = () => {
     const emailRequest = async (mail: string) => {
         const body = JSON.stringify({ mail });
         const url = `http://localhost:8080/email`;
-        const { PostRequest } = request();
-        const result = await PostRequest(url, 'POST', body);
+        const { PostMail } = request();
+        const result = await PostMail(url, 'POST', body);
         return result;
     };
 

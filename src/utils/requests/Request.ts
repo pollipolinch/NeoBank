@@ -1,8 +1,8 @@
 export const request = () => {
-    const PostRequest = async (
+    const PostMail = async (
         url: string,
         method: string,
-        body: string,
+        body: string | null,
         headers = { 'Content-Type': 'application/json' }
     ) => {
         try {
@@ -16,5 +16,23 @@ export const request = () => {
             throw error;
         }
     };
-    return { PostRequest };
+    const PostApplication = async (
+        url: string,
+        method: string,
+        body: string | null,
+        headers = { 'Content-Type': 'application/json' }
+    ) => {
+        try {
+            const res = await fetch(url, { method, body, headers });
+            console.log(res);
+            if (!res.ok) {
+                throw new Error('error');
+            }
+            const data = await res.json();
+            return data;
+        } catch (error) {
+            throw error;
+        }
+    };
+    return { PostMail, PostApplication };
 };

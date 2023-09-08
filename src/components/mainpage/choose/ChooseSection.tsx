@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import style from './choose.module.css';
-import { card1, card2, card3, card4 } from '../../../helpers/image';
+import { card1, card2, card3, card4 } from '../../../utils/helpers/image';
 
 export const ChooseSection = () => {
     const navigate = useNavigate();

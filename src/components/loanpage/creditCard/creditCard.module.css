@@ -42,6 +42,12 @@
     margin: 0 auto 80px;
   }
 }
+@media screen and (max-width: 400px) {
+  .credit_card__img {
+    width: 200px;
+    height: 120px;
+  }
+}
 .credit_card__text {
   width: 70%;
   font-family: "Ubuntu", sans-serif;
