@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    background: rgba(61, 61, 61, 1);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+}

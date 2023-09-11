@@ -1,0 +1,120 @@
+.modal {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.modal__content {
+    width: 448px;
+    background-color: white;
+    transition: 0.5s;
+}
+.modal__active {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+.modal__content__active {
+    width: 448px;
+    padding: 15px;
+    background-color: white;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+.modal_container {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+.cross {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    content: url(../../../assets/img/Close_square.png);
+}
+.text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-top: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: right;
+    margin-top: 40px;
+}
+.button_deny {
+    width: 96px;
+    height: 40px;
+    border-radius: 8px;
+    background: #d93737cc;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: white;
+    transition: 0.5s;
+    margin-right: 40px;
+}
+
+.button_cancel {
+    width: 96px;
+    height: 40px;
+    border-radius: 8px;
+    background: #003cff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: white;
+    transition: 0.5s;
+}
+
+.button_home {
+    width: 128px;
+    height: 40px;
+    border-radius: 8px;
+    background: #003cff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: white;
+    transition: 0.5s;
+}
+.button_deny:hover,
+.button_cancel:hover,
+.button_home:hover {
+    background: #7796c0;
+}

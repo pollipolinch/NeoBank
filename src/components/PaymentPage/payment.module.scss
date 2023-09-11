@@ -1,0 +1,145 @@
+.payment {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    &_info {
+        padding: 20px;
+        display: flex;
+        @media screen and (max-width: 1350px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: 600px) {
+            justify-content: space-around;
+        }
+    }
+    &_title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        width: 40%;
+        @media screen and (max-width: 600px) {
+            width: 70%;
+        }
+    }
+    &_stepNum {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    &_table {
+        width: 100%;
+    }
+    &_header {
+        display: block;
+        margin: 0 5%;
+        border-bottom: 1px solid #e2e8f0;
+        &_item {
+            display: inline-block;
+            padding: 0 0 15px 0;
+            width: 16%;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #4a5568;
+        }
+    }
+    &_body {
+        display: block;
+        margin: 0 5%;
+        border-bottom: 1px solid #e2e8f0;
+        &_item {
+            font-family: 'Ubuntu', sans-serif;
+            display: inline-block;
+            padding: 10px 0;
+            width: 16%;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+    }
+    .button_up {
+        display: inline-block;
+        cursor: pointer;
+        content: url(../../assets/img/Arrow_drop_up.png);
+    }
+    .button_down {
+        display: inline-block;
+        cursor: pointer;
+        content: url(../../assets/img/Arrow_drop_down.png);
+    }
+    &_container {
+        padding: 20px 0;
+        margin: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_form {
+        &_label {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-left: 20px;
+        }
+    }
+    &_button_send {
+        width: 96px;
+        height: 40px;
+        border-radius: 8px;
+        background: #003cff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: white;
+        margin-left: 40px;
+        transition: 0.5s;
+        &:hover {
+            background: #7796c0;
+        }
+
+        &_disabled {
+            width: 96px;
+            height: 40px;
+            border-radius: 8px;
+            background: #7796c0;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: white;
+            margin-left: 40px;
+            cursor: default !important;
+        }
+    }
+    &_button_deny {
+        width: 96px;
+        height: 40px;
+        border-radius: 8px;
+        background: #d93737cc;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: white;
+        transition: 0.5s;
+        &:hover {
+            background: #7796c0;
+        }
+    }
+}
+.form__container {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,285 @@
+.getCard__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  margin: 30px 0;
+}
+.getCard__steps {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.getCard__figure {
+  display: flex;
+  align-items: center;
+}
+.getCard__circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background: rgb(217, 217, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.getCard__line {
+  width: 60%;
+  height: 2px;
+  background: rgba(128, 128, 128, 0.2);
+  margin-left: 30px;
+}
+.getCard__text {
+  width: 70%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.getCard__container {
+  width: 90%;
+  margin: auto;
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+}
+.getCard__container_info {
+  display: flex;
+}
+@media screen and (max-width: 1350px) {
+  .getCard__container_info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.getCard__container_steps {
+  margin: 30px 0;
+  display: flex;
+}
+.getCard__container__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 75%;
+}
+.getCard__container_stepNum {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.getCard__container_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 20px 0;
+}
+.getCard__container_nums {
+  display: flex;
+  justify-content: space-between;
+}
+.getCard__container_slider {
+  width: 100%;
+  -webkit-appearance: none;
+  background: #000000;
+  cursor: pointer;
+}
+.getCard__container_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #5b35d5;
+  margin-top: -10px;
+}
+.getCard__container_slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #5b35d5;
+}
+.getCard__container_about {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.getCard__container_info_left {
+  border-right: 1px dashed rgba(128, 128, 128, 0.4);
+  padding-left: 30px;
+}
+@media screen and (max-width: 700px) {
+  .getCard__container_info_left {
+    width: 90%;
+  }
+}
+.getCard__container_info_right {
+  padding: 25px 30px;
+}
+.getCard__container_range {
+  width: 200px;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.2);
+}
+.getCard__amount {
+  width: 95%;
+  border: 1px solid rgb(91, 53, 213);
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px 80px 10px 30px;
+}
+.getCard__amount_num {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(120, 109, 109);
+}
+.getCard__select {
+  padding: 10px 30px;
+}
+.getCard__select_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .getCard__select_container {
+    justify-content: center;
+  }
+}
+.getCard__select_label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 20px 0;
+}
+.getCard__select_input {
+  width: 270px;
+  height: 40px;
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  background: rgb(249, 245, 227);
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  color: rgb(128, 128, 128);
+  padding: 0 10px;
+}
+@media screen and (max-width: 700px) {
+  .getCard__select_input {
+    margin-right: 10px;
+  }
+}
+.getCard__select_input:focus {
+  border-color: #5b35d5;
+}
+.getCard__select_input_error {
+  width: 270px;
+  height: 40px;
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  background: rgb(249, 245, 227);
+  border-radius: 6px;
+  border: 2px solid #ff5631;
+  color: rgb(128, 128, 128);
+  padding: 0 10px;
+}
+.getCard__select_cont {
+  display: block;
+  width: 270px;
+  height: 40px;
+  background: rgb(249, 245, 227);
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 0 10px;
+  margin-right: 20px;
+}
+.getCard__select_stars {
+  color: rgb(255, 0, 0);
+}
+.getCard__input_container {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+.getCard__input_container svg {
+  position: relative;
+  right: 25px;
+}
+@media screen and (max-width: 700px) {
+  .getCard__input_container svg {
+    right: 35px;
+  }
+}
+.getCard__errors {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ff5631;
+}
+.getCard__button_container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0;
+}
+.getCard__button {
+  width: 148px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgb(0, 60, 255);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  transition: 0.5s;
+}
+.getCard__button:hover {
+  background: #7796c0;
+}
+
+.select__container {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #5b35d5;
+  margin: 70px auto;
+}
+.select__container_title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 20px 0;
+  color: #1c1c1e;
+}
+.select__container_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #4f5665;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=getCard.module.css.map */

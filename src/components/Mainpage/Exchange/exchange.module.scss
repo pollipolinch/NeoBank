@@ -1,0 +1,103 @@
+.exchange {
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(
+            358.2deg,
+            rgba(178, 178, 178, 0.8) 8.06%,
+            rgba(178, 178, 178, 0) 67.93%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(244, 244, 244, 0.9),
+            rgba(244, 244, 244, 0.9)
+        );
+    border-radius: 28px;
+    @media screen and (max-width: 1350px) {
+        max-width: 1000px;
+    }
+    @media screen and (max-width: 1050px) {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    &__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    &__text {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 50px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    &__cur {
+        padding-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        @media screen and (max-width: 490px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 330px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &_value {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            line-height: 22px;
+            font-size: 20px;
+            letter-spacing: 0.02em;
+            color: rgb(128, 128, 128);
+        }
+
+        &_price {
+            margin-left: 17px;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    &__link {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        line-height: 22px;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: rgb(255, 255, 255);
+        display: block;
+        padding-top: 52px;
+        transition: 0.5s;
+        &:hover {
+            color: rgb(180, 56, 122);
+        }
+    }
+
+    &__update_text {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: left;
+
+        @media screen and (max-width: 1050px) {
+            text-align: right;
+        }
+    }
+
+    &__update_img {
+        display: block;
+        float: right;
+        margin-top: 80px;
+
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
+    }
+}
