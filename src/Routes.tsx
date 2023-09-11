@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Main from './pages/Main/Main';
-import Loan from './pages/Loan/Loan';
-import NotFound from './pages/notFound/NotFound';
-import ScoringPage from './pages/ScoringPage/ScoringPage';
-import PaymentPage from './pages/PaymentPage/PaymentPage';
-import SignPage from './pages/SignPage/SignPage';
-import CodePageContent from './pages/CodePage/CodePage';
+import Main from './pages/Main';
+import Loan from './pages/Loan';
+import NotFound from './pages/NotFound';
+import ScoringPage from './pages/ScoringPage';
+import PaymentPage from './pages/PaymentPage';
+import SignPage from './pages/SignPage';
+import CodePageContent from './pages/CodePage';
 
 export const Routs = () => {
     return (

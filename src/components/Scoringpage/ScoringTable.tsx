@@ -16,7 +16,7 @@ import {
     dependentAmount,
     employmentStatus,
     position,
-} from '../../utils/constants/ScoringSelect';
+} from '../../utils/constants/scoringSelect';
 import { ScoringText } from './ScoringText';
 
 export const ScoringTable = () => {

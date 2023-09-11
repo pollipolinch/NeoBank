@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import style from './news.module.css';
 import { useEffect, useState } from 'react';
-import { url_news } from '../../../utils/constants/Api';
+import { url_news } from '../../../utils/constants/api';
 import { News } from '../../../utils/types/types';
 import { NewsItem } from './NewsItem';
 

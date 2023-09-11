@@ -4,7 +4,7 @@ import {
     api_key_exchange,
     api_host_exchange,
     url_exchange,
-} from '../../../utils/constants/Api';
+} from '../../../utils/constants/api';
 import { IExchangeItem } from '../../../utils/types/types';
 
 export const ExchangeItem = ({ value }: IExchangeItem) => {

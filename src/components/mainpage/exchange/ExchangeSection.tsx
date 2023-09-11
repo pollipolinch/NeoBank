@@ -1,6 +1,6 @@
 import style from './exchange.module.css';
 import bank from '../../../assets/img/bank.png';
-import { typesOfCur } from '../../../utils/constants/Api';
+import { typesOfCur } from '../../../utils/constants/api';
 import { ExchangeItem } from './ExchangeItem';
 
 import { useAppSelector, useAppDispatch } from '../../../utils/hooks/useRedux';
