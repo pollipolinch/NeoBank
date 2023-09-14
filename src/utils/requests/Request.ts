@@ -7,9 +7,9 @@ export const request = () => {
   ) => {
     try {
       const res = await fetch(url, { method, body, headers });
-      if (!res.ok) {
-        throw new Error("error");
-      }
+      // if (!res.ok) {
+      //   throw new Error("error");
+      // }
       return true;
     } catch (error) {
       throw error;
