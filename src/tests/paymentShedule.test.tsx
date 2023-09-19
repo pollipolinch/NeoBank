@@ -1,4 +1,4 @@
-import PaymentPage from "../pages/PaymentPage";
+import { PaymentShedule } from "../components/PaymentPage/PaymentShedule";
 import { fireEvent, screen } from "@testing-library/react";
 import { render } from "../utils/helpers/test";
 import { BrowserRouter } from "react-router-dom";
@@ -9,7 +9,7 @@ describe("PaymentShedule Section Test", () => {
   it("show table", () => {
     render(
       <BrowserRouter>
-        <PaymentPage />
+        <PaymentShedule />
       </BrowserRouter>
     );
     expect(screen.getByRole("table")).toBeInTheDocument();
@@ -17,7 +17,7 @@ describe("PaymentShedule Section Test", () => {
   it("click checkbox", () => {
     render(
       <BrowserRouter>
-        <PaymentPage />
+        <PaymentShedule />
       </BrowserRouter>
     );
     const checkbox = screen.getByTestId(/checkbox/i);
@@ -28,7 +28,7 @@ describe("PaymentShedule Section Test", () => {
   it("Open modal", async () => {
     render(
       <BrowserRouter>
-        <PaymentPage />
+        <PaymentShedule />
       </BrowserRouter>
     );
     const user = userEvent.setup();

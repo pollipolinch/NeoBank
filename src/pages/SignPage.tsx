@@ -18,13 +18,13 @@ const SignPage = () => {
   if (loader) {
     return <LoaderCom />;
   }
-  // if (
-  //     (id && id !== Number(applicationId)) ||
-  //     !id ||
-  //     status !== AppStatus.DOCUMENT_CREATED
-  // ) {
-  //     return <NotFound />;
-  // }
+  if (
+    (id && id !== Number(applicationId)) ||
+    !id ||
+    status !== AppStatus.DOCUMENT_CREATED
+  ) {
+    return <NotFound />;
+  }
 
   return (
     <>

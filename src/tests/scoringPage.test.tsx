@@ -1,4 +1,4 @@
-import ScoringPage from "../pages/ScoringPage";
+import { ScoringTable } from "../components/Scoringpage/ScoringTable";
 import { screen } from "@testing-library/react";
 import { render } from "../utils/helpers/test";
 import { BrowserRouter } from "react-router-dom";
@@ -8,7 +8,7 @@ describe("Offers Section Test", () => {
   it("show section", () => {
     render(
       <BrowserRouter>
-        <ScoringPage />
+        <ScoringTable />
       </BrowserRouter>
     );
     const selects = screen.getAllByRole("combobox");
@@ -19,7 +19,7 @@ describe("Offers Section Test", () => {
   it("All inputs have id", () => {
     render(
       <BrowserRouter>
-        <ScoringPage />
+        <ScoringTable />
       </BrowserRouter>
     );
     const inputs = screen.getAllByRole("textbox");
@@ -34,7 +34,7 @@ describe("Offers Section Test", () => {
   it("focus input", () => {
     render(
       <BrowserRouter>
-        <ScoringPage />
+        <ScoringTable />
       </BrowserRouter>
     );
     const input = screen.getByPlaceholderText(/For example 100/i);

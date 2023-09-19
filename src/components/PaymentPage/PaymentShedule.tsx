@@ -4,6 +4,9 @@ import { PaymentItem } from "./PaymentItem";
 import { PaymentText } from "./PaymentText";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import Modal from "../CompMini/Modal/Modal";
+import { ModalContentFirst } from "../CompMini/Modal/ModalContentFirst";
+import { ModalContentSecond } from "../CompMini/Modal/ModalContentSecond";
 import {
   postAgree,
   paymentsAscSort,
@@ -16,9 +19,8 @@ import { AppStatus, ISort } from "../../utils/types/types";
 export const PaymentShedule = () => {
   const { applicationId } = useParams();
   const dispatch = useAppDispatch();
-  const { monthlyPayments, loader, status } = useAppSelector(
-    (store) => store.cardSlice
-  );
+  const { monthlyPayments, loader, status, modal, approveModal } =
+    useAppSelector((store) => store.cardSlice);
   const [agree, setAgree] = useState(false);
   const [paymentHeader, setpaymentHeader] = useState<ISort[]>([
     { name: "NUMBER", sort: "number", active: false },
@@ -73,6 +75,12 @@ export const PaymentShedule = () => {
   }
   return (
     <section>
+      <Modal active={modal}>
+        <ModalContentFirst />
+      </Modal>
+      <Modal active={approveModal}>
+        <ModalContentSecond />
+      </Modal>
       <div className={style.payment}>
         <div className={style.payment_info}>
           <h3 className={style.payment_title}>Payment Schedule</h3>

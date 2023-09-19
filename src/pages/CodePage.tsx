@@ -18,15 +18,15 @@ const CodePageContent = () => {
   if (loader) {
     return <LoaderCom />;
   }
-  // if (
-  //     (id && id !== Number(applicationId)) ||
-  //     !id ||
-  //     (status !== AppStatus.DOCUMENT_CREATED &&
-  //         status !== AppStatus.CREDIT_ISSUED) ||
-  //     !sign
-  // ) {
-  //     return <NotFound />;
-  // }
+  if (
+    (id && id !== Number(applicationId)) ||
+    !id ||
+    (status !== AppStatus.DOCUMENT_CREATED &&
+      status !== AppStatus.CREDIT_ISSUED) ||
+    !sign
+  ) {
+    return <NotFound />;
+  }
   return (
     <>
       <div>

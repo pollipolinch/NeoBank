@@ -18,15 +18,15 @@ const ScoringPage = () => {
   if (loader) {
     return <LoaderCom />;
   }
-  // if (
-  //     (id && id !== Number(applicationId)) ||
-  //     !id ||
-  //     (status !== AppStatus.CC_APPROVED &&
-  //         status !== AppStatus.APPROVED &&
-  //         status !== AppStatus.CC_DENIED)
-  // ) {
-  //     return <NotFound />;
-  // }
+  if (
+    (id && id !== Number(applicationId)) ||
+    !id ||
+    (status !== AppStatus.CC_APPROVED &&
+      status !== AppStatus.APPROVED &&
+      status !== AppStatus.CC_DENIED)
+  ) {
+    return <NotFound />;
+  }
 
   return (
     <>

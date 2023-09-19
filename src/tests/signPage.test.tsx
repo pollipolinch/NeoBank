@@ -1,4 +1,4 @@
-import SignPage from "../pages/SignPage";
+import { SignContent } from "../components/SignPage/SignContent";
 import { fireEvent, screen } from "@testing-library/react";
 import { render } from "../utils/helpers/test";
 import { BrowserRouter } from "react-router-dom";
@@ -8,7 +8,7 @@ describe("Sign Section Test", () => {
   it("show section", () => {
     render(
       <BrowserRouter>
-        <SignPage />
+        <SignContent />
       </BrowserRouter>
     );
     expect(screen.getByText(/Send/i)).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe("Sign Section Test", () => {
   it("click checkbox", () => {
     render(
       <BrowserRouter>
-        <SignPage />
+        <SignContent />
       </BrowserRouter>
     );
     const checkbox = screen.getByTestId(/checkbox/i);
@@ -30,7 +30,7 @@ describe("Sign Section Test", () => {
   it("link have href", () => {
     render(
       <BrowserRouter>
-        <SignPage />
+        <SignContent />
       </BrowserRouter>
     );
     const link = screen.getByTestId(/document/i);
