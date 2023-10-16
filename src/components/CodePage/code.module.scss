@@ -1,0 +1,111 @@
+.code {
+    &__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+.input {
+    &__inactive {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1.5px solid #808080;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        &_container {
+            width: 48px;
+            height: 48px;
+            border: 0.5px solid #808080;
+            border-radius: 8px;
+            padding: 13px;
+            margin: 10px;
+        }
+    }
+
+    &__active {
+        width: 20px;
+        height: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        &_container {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            padding: 13px;
+            margin: 10px;
+            border: 1px solid #3182ce;
+        }
+    }
+}
+
+.error__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    color: #ff5631;
+}
+.codeText {
+    &__img {
+        display: block;
+        margin: 40px auto;
+    }
+    &__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 44px;
+        text-align: center;
+        color: #1c1c1e;
+    }
+    &__text {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        color: #4f5665;
+        margin: 30px 0;
+    }
+    &__button {
+        width: 268px;
+        height: 50px;
+        border-radius: 16px;
+        background: #003cff;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+        &:hover {
+            background: #7796c0;
+        }
+    }
+}
+input[type='number']::-webkit-inner-spin-button {
+    display: none;
+}

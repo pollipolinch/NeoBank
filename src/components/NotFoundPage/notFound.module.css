@@ -1,0 +1,52 @@
+.error {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1122px) {
+  .error {
+    justify-content: center;
+  }
+}
+.error__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  padding: 150px 0 20px 0;
+}
+.error__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 34px;
+  padding-bottom: 20px;
+}
+.error__info {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #4b4b4b;
+  padding-bottom: 20px;
+}
+.error__button {
+  width: 192px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgb(0, 60, 255);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  transition: 0.5s;
+}
+.error__button:hover {
+  background: #7796c0;
+}/*# sourceMappingURL=notFound.module.css.map */

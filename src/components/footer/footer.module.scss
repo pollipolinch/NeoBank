@@ -1,0 +1,93 @@
+.footer {
+    margin-top: 100px;
+    background: linear-gradient(
+            0deg,
+            rgba(178, 178, 178, 0.2),
+            rgba(178, 178, 178, 0.2)
+        ),
+        linear-gradient(0deg, #f4f4f4, #f4f4f4);
+    &__container {
+        max-width: 1300px;
+        margin: 0px auto;
+        padding: 95px 0px 90px 0px;
+
+        @media screen and (max-width: 1350px) {
+            max-width: 1000px;
+        }
+        @media screen and (max-width: 1050px) {
+            width: 90%;
+        }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__address_phone {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        line-height: 44px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        @media screen and (max-width: 490px) {
+            font-size: 24px;
+        }
+    }
+    &__address_email {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        margin-top: 8px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0px 20px 0px;
+
+        @media screen and (max-width: 1050px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__link {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        margin: 0px 38px 10px 0px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            color: rgb(180, 56, 122);
+        }
+    }
+
+    &__line {
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.81);
+    }
+    &__text {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        padding-top: 30px;
+        @media screen and (max-width: 1050px) {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__logo {
+        width: 100px;
+    }
+}
